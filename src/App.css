@@ -25,7 +25,8 @@
 .main-content {
  margin-left: auto;
  margin-right: 0;
- width: 85%;
+ width: 88%;
+ height: 100vh;
  flex-direction: row-reverse;
  text-align: center;
  color: black;

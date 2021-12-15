@@ -8,20 +8,26 @@ const NavigationBar = () => {
  return (
   <div className="main-navbar">
    <div className="logo">
-    <h1>K</h1>
+    <NavItem>
+     <NavLink to="/">
+      <h1>K</h1>
+     </NavLink>
+    </NavItem>
    </div>
    <div className="nav-links">
     <Nav vertical>
      <NavItem>
-      <NavLink to="/">HOME</NavLink>
+      <NavLink to="/about">About</NavLink>
      </NavItem>
 
      <NavItem>
-      <NavLink to="/about">ABOUT</NavLink>
+      <NavLink to="/skills">My Skills</NavLink>
      </NavItem>
-
      <NavItem>
-      <NavLink to="/contact">CONTACT</NavLink>
+      <NavLink to="/work">Work</NavLink>
+     </NavItem>
+     <NavItem>
+      <NavLink to="/contact">Contact</NavLink>
      </NavItem>
      {/* <NavItem>
      <NavLink href="#">Disabled Link</NavLink>
