@@ -1,0 +1,39 @@
+.main-navbar {
+ width: 15%;
+ height: 100vh;
+ justify-items: center;
+ align-content: space-between;
+ text-align: center;
+ flex-direction: column;
+ background-color: rgb(24, 24, 24);
+ position: fixed;
+}
+.logo {
+ height: 40vh;
+ display: flex;
+ justify-content: center;
+}
+.logo h1 {
+ margin-top: 20px;
+ font-size: 60px;
+ color: rgb(226, 66, 154);
+}
+
+a {
+ text-align: center;
+ color: white;
+ font-size: large;
+ text-decoration: none;
+}
+
+a:hover {
+ font-size: larger;
+ text-align: center;
+ color: rgb(226, 66, 154);
+ text-decoration: none;
+}
+
+li.nav-item {
+ border-bottom: 0.1px solid rgb(44, 44, 54);
+ margin-top: 3px;
+}
