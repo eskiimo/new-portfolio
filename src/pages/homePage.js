@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import { CSSTransition } from 'react-transition-group';
 import { Container } from 'reactstrap';
 import './homePage.css';
 

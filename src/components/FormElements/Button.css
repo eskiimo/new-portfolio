@@ -1,0 +1,13 @@
+.buton {
+ color: rgb(8, 253, 216);
+ background-color: transparent;
+ border-radius: 0;
+ border: 1px solid rgb(8, 253, 216);
+ font-size: 20px;
+ font-weight: 350;
+ width: 13rem;
+}
+.buton:hover {
+ background-color: rgb(8, 253, 216);
+ color: black;
+}

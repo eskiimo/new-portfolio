@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
+import Transition from '../UIelements/Transition';
 
 import './NavigationBar.css';
 import NavLinks from './Navlinks';
@@ -32,13 +32,15 @@ const NavigationBar = (props) => {
     <NavLinks isOpen={navIsOpen} onClick={closeNavBar} />
     <NavFooter />
    </div>
-   <CSSTransition
+   {/* <CSSTransition
     in={navIsOpen}
     timeout={200}
     classNames={'slide-in-left'}
     mountOnEnter
     unmountOnExit
-   >
+   > */}
+
+   <Transition bool={navIsOpen}>
     <div className="wide">
      <div className="logo">
       <NavItem onClick={toggleNavBar}>
@@ -50,7 +52,7 @@ const NavigationBar = (props) => {
      <NavLinks isOpen={navIsOpen} onClick={toggleNavBar} />
      <NavFooter />
     </div>
-   </CSSTransition>
+   </Transition>
   </React.Fragment>
  );
 };
