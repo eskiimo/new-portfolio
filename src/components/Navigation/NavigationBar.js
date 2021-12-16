@@ -12,21 +12,24 @@ const NavigationBar = (props) => {
  const toggleNavBar = () => {
   setNavIsOpen((prev) => !prev);
  };
+ const closeNavBar = () => {
+  setNavIsOpen(false);
+ };
 
  return (
   <React.Fragment>
    <button className="hamburger" onClick={toggleNavBar}>
-    <i class="fas fa-bars fa-2x"></i>
+    <i className="fas fa-bars fa-2x"></i>
    </button>
    <div className="main-navbar">
     <div className="logo">
-     <NavItem onClick={toggleNavBar}>
+     <NavItem onClick={closeNavBar}>
       <NavLink to="/">
        <h1>K</h1>
       </NavLink>
      </NavItem>
     </div>
-    <NavLinks isOpen={navIsOpen} onClick={toggleNavBar} />
+    <NavLinks isOpen={navIsOpen} onClick={closeNavBar} />
     <NavFooter />
    </div>
    <CSSTransition

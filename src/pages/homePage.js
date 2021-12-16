@@ -6,22 +6,34 @@ import './homePage.css';
 
 const Home = () => {
  let h11 = ['H', 'i', ','];
- const mapH1 = h11.map((letter) => {
-  return <span className="animate">{letter}</span>;
+ const mapH1 = h11.map((letter, index) => {
+  return (
+   <span key={index} className="animate">
+    {letter}
+   </span>
+  );
  });
 
  let h12 = ['I', "'", 'm', ' ', 'K', 'a', 'r', 'e', 'e', 'm', ','];
- const mapH2 = h12.map((letter) => {
+ const mapH2 = h12.map((letter, index) => {
   return letter !== 'K' ? (
-   <span className="animate">{letter}</span>
+   <span key={index} className="animate">
+    {letter}
+   </span>
   ) : (
-   <span className="with-color">{letter}</span>
+   <span key={index} className="with-color">
+    {letter}
+   </span>
   );
  });
 
  let h13 = ['W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
- const mapH3 = h13.map((letter) => {
-  return <span className="animate">{letter}</span>;
+ const mapH3 = h13.map((letter, index) => {
+  return (
+   <span key={letter + index} className="animate">
+    {letter}
+   </span>
+  );
  });
 
  return (

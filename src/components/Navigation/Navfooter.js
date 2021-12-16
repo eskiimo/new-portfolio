@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col, Row } from 'reactstrap';
 import './Navfooter.css';
 
 const Navfooter = () => {
@@ -12,20 +11,20 @@ const Navfooter = () => {
      rel="noreferrer"
     >
      {' '}
-     <i class="fab fa-linkedin"> </i>{' '}
+     <i className="fab fa-linkedin"> </i>{' '}
     </a>
    </div>
    <div className="contact-icon">
     <a href="//github.com/eskiimo" target="_blank" rel="noreferrer">
      {' '}
-     <i class="fab fa-github"> </i>{' '}
+     <i className="fab fa-github"> </i>{' '}
     </a>
    </div>
 
    <div className="contact-icon">
     <a href="//fb.com/kremkamall" target="_blank" rel="noreferrer">
      {' '}
-     <i class="fab fa-facebook"> </i>{' '}
+     <i className="fab fa-facebook"> </i>{' '}
     </a>
    </div>
   </div>
