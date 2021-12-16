@@ -1,14 +1,16 @@
 .footer {
  width: 12hv;
- justify-content: center;
+ justify-content: space-between;
  align-items: center;
  margin: 0;
  padding: 0;
+ display: inline-flex;
 }
-.footer-p {
+.contact-icon {
  height: max-content;
  font-size: small;
- margin-right: auto;
+ margin-top: 20px;
+ margin-right: 10px;
  margin-left: auto;
 }
 .footer-span {
