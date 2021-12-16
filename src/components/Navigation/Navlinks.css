@@ -1,0 +1,20 @@
+a {
+ text-align: center;
+ color: white;
+ font-size: 0.85rem;
+ text-decoration: none;
+ line-height: 40px;
+}
+
+a:hover {
+ font-size: 0.9rem;
+ text-align: center;
+ color: rgb(253, 33, 85);
+ text-decoration: none;
+}
+
+li.nav-item {
+ border-bottom: 0.1px solid rgb(29, 29, 29);
+ margin-top: 3px;
+ font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
