@@ -20,7 +20,7 @@ const App = () => {
   <>
    <Router className="head">
     <NavigationBar />
-    <main className="main-content">{routes}</main>
+    <main className="main-content">{routes}</main>){/* <NavigationBar /> */}
    </Router>
   </>
  );

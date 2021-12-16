@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 
 import './Navlinks.css';
 
-const NavLinks = () => {
+const NavLinks = (props) => {
  return (
   <div className="nav-links">
-   <Nav vertical>
+   <Nav vertical onClick={props.onClick}>
     <NavItem>
      <NavLink to="/about">About</NavLink>
     </NavItem>
