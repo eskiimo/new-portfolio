@@ -1,0 +1,21 @@
+.form-control {
+ border-radius: 0;
+ border: 1px solid rgb(8, 253, 216);
+ background-color: transparent;
+ color: rgb(8, 253, 216);
+}
+.error-text {
+ text-align: start;
+ color: rgb(253, 33, 85);
+}
+.form-control__invalid {
+ border: 2px solid rgb(253, 33, 85);
+ color: rgb(253, 33, 85);
+}
+.form-control:focus {
+ outline: none;
+ background-color: transparent;
+ border: 2px solid rgb(8, 253, 216);
+ box-shadow: none;
+ color: white;
+}

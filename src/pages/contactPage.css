@@ -1,17 +1,45 @@
 .form-container {
- margin-top: 50px;
  height: 100vh;
+ max-width: 80%;
  display: flex;
- align-items: center;
+ flex-direction: column;
+ align-items: flex-start;
  justify-content: center;
  margin: 0 50px;
 }
 
-.form-control {
- border-radius: 0;
- border: 1px solid rgb(8, 253, 216);
- background-color: transparent;
+.form {
+ width: 100%;
+ max-width: 80%;
+ margin-left: 10%;
 }
+
 .form-button {
  text-align: end;
+}
+
+.parent {
+ display: inline-flex;
+ min-width: 20px;
+}
+.parent:hover .animate {
+ color: white;
+ font-size: 5rem;
+ font-weight: 700;
+ color: rgb(253, 33, 85);
+ transform: translate3d(2px, -2px, 0);
+}
+.contact-paragraph {
+ margin-right: auto;
+ text-align: start;
+ color: rgb(8, 253, 216);
+ margin-left: 10%;
+}
+.form-container .contact-message {
+ text-align: start;
+ color: white;
+ margin-bottom: 50px;
+}
+.contact-message {
+ margin-left: 10%;
 }
