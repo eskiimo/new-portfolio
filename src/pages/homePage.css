@@ -1,13 +1,13 @@
 .with-color {
  color: rgb(253, 33, 85);
- font-size: 5rem;
+ font-size: 8vw;
  margin-left: 0;
 
  font-family: 'Roboto Slab', serif;
 }
 .animate {
  color: white;
- font-size: 5rem;
+ font-size: 8vw;
  font-family: 'Roboto Slab', serif;
  margin: 5px 0;
  font-weight: 700;
@@ -19,7 +19,7 @@
 }
 .parent:hover .animate {
  color: white;
- font-size: 5rem;
+ font-size: 8vw;
  font-weight: 700;
  color: rgb(253, 33, 85);
  transform: translate3d(2px, -2px, 0);
