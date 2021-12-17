@@ -37,10 +37,10 @@ const Home = () => {
 
  return (
   <Container className="home">
-   <p className="opening-tag html-snippets">&lt;html &gt;</p>
+   <p className=" html-snippets">&lt;html &gt;</p>
    <p className="html-snippets"> &lt;body &gt;</p>
 
-   <p className="opening-tag html-snippets">&lt;h1 &gt;</p>
+   <p className=" html-snippets">&lt;h1 &gt;</p>
 
    <div className="pragraph">
     <div className="h">{mapH1}</div>

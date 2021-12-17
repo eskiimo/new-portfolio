@@ -50,11 +50,13 @@ const Contact = () => {
     <p className="html-snippets">&lt;h1 &gt;</p>
 
     <div className="contact-paragraph">{mapH3}</div>
+    <p className="html-snippets"> &lt;p &gt;</p>
     <p className="contact-message">
      I'm interested in freelance opportunities , especially ambitious or large
      projects. However, if you have other request or question, don't hesitate to
      use the form.
     </p>
+    <p className="html-snippets"> &lt;form &gt;</p>
     <Form className="form" onSubmit={onSubmitHandler}>
      <Transition bool={bool}>
       <FormGroup>
@@ -94,7 +96,6 @@ const Contact = () => {
       </FormGroup>
      </Transition>
      <div className="form-button">
-      {' '}
       <Buton
        disabled={!formState.isValid}
        type="submit"
@@ -103,7 +104,7 @@ const Contact = () => {
       />
      </div>
     </Form>
-    <p className="html-snippets"> &lt;p &gt;</p>
+    <p className="html-snippets"> &lt;/body &gt;</p>
    </div>
   </React.Fragment>
  );
