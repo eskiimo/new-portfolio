@@ -1,6 +1,6 @@
 .main-navbar {
  width: 15%;
- height: 100vh;
+ height: 100%;
  justify-items: center;
  align-content: space-between;
  text-align: center;
@@ -8,7 +8,12 @@
  background-color: rgb(24, 24, 24);
  position: fixed;
 }
+.hide-main-navbar {
+ display: none;
+}
 .wide {
+ margin: 0;
+ box-sizing: content-box;
  width: 100%;
  height: 100vh;
  justify-items: center;

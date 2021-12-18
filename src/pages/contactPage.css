@@ -21,10 +21,11 @@
 .parent {
  display: inline-flex;
  min-width: 20px;
+ font-size: 6vw;
 }
 .parent:hover .animate {
  color: white;
- font-size: 5rem;
+ font-size: 6vw;
  font-weight: 700;
  color: rgb(253, 33, 85);
  transform: translate3d(2px, -2px, 0);
@@ -35,10 +36,13 @@
  color: rgb(8, 253, 216);
  margin-left: 10%;
 }
-.form-container .contact-message {
+.form-container {
  text-align: start;
  color: white;
+ margin-left: 15%;
 }
 .contact-message {
+ text-align: start;
+ color: white;
  margin-left: 10%;
 }

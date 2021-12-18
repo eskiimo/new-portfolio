@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavigationBar from './components/Navigation/NavigationBar';
@@ -7,7 +7,17 @@ import Contact from './pages/contactPage';
 import Home from './pages/homePage';
 // import Skills from'./pages/
 
+import { HideContext } from './components/util/context';
+
 const App = () => {
+ const [isHidden, setHidden] = useState(false);
+ const showContent = useCallback(() => {
+  setHidden(false);
+ }, []);
+
+ const hideContent = useCallback(() => {
+  setHidden(true);
+ }, []);
  let routes = (
   <Routes>
    <Route path="/" element={<Home />}></Route>
@@ -18,12 +28,21 @@ const App = () => {
   </Routes>
  );
  return (
-  <>
+  <HideContext.Provider
+   value={{
+    hidden: isHidden,
+    hide: hideContent,
+    show: showContent,
+   }}
+  >
    <Router className="head">
     <NavigationBar />
-    <main className="main-content">{routes}</main>){/* <NavigationBar /> */}
+    <main className={isHidden ? 'main-content-hide' : 'main-content'}>
+     {routes}
+    </main>
+    ){/* <NavigationBar /> */}
    </Router>
-  </>
+  </HideContext.Provider>
  );
 };
 

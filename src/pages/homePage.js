@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import Buton from '../components/FormElements/Button';
 import './homePage.css';
 
@@ -36,25 +35,24 @@ const Home = () => {
  });
 
  return (
-  <Container className="home">
-   <p className=" html-snippets">&lt;html &gt;</p>
-   <p className="html-snippets"> &lt;body &gt;</p>
+  <React.Fragment>
+   <div className="home-container">
+    <p className=" html-snippets">&lt;html &gt;</p>
+    <p className="html-snippets"> &lt;body &gt;</p>
+    <p className=" html-snippets">&lt;h1 &gt;</p>
 
-   <p className=" html-snippets">&lt;h1 &gt;</p>
+    <div className="home-pragraph">
+     <div>{mapH1}</div>
+     <div>{mapH2}</div>
+     <div>{mapH3}</div>
+    </div>
+    <p className="html-snippets"> &lt;p &gt;</p>
+    <h3> Front End Developer, React / Flutter</h3>
+    <p className="html-snippets"> &lt;/p &gt;</p>
 
-   <div className="pragraph">
-    <div className="h">{mapH1}</div>
-    <div className="h">{mapH2}</div>
-    <div className="h">{mapH3}</div>
+    <Buton text="contact Me" width="20vw" to="/contact"></Buton>
    </div>
-   <p className="html-snippets"> &lt;p &gt;</p>
-   <h3> Front End Developer, React / Flutter</h3>
-   <p className="html-snippets"> &lt;/p &gt;</p>
-
-   <div className="pragraph">
-    <Buton text="contact Me" width="30%" to="/contact"></Buton>
-   </div>
-  </Container>
+  </React.Fragment>
  );
 };
 export default Home;
