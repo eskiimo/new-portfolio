@@ -5,7 +5,7 @@ import NavigationBar from './components/Navigation/NavigationBar';
 import About from './pages/aboutPage';
 import Contact from './pages/contactPage';
 import Home from './pages/homePage';
-// import Skills from'./pages/
+import Skills from './pages/skills';
 
 import { HideContext } from './components/util/context';
 
@@ -21,7 +21,7 @@ const App = () => {
  let routes = (
   <Routes>
    <Route path="/" element={<Home />}></Route>
-   {/* <Route path="/skills" element={<Skills />}></Route> */}
+   <Route path="/skills" element={<Skills />}></Route>
    <Route path="/about" element={<About />}></Route>
    {/* <Route path="/work" element={<Work />}></Route> */}
    <Route path="/contact" element={<Contact />}></Route>

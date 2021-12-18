@@ -1,0 +1,21 @@
+.skills-container {
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.skills-container .col-sm-6 {
+ padding: 0;
+ margin: 0;
+}
+.skills-container .col-sm-4 {
+ padding: 0;
+ margin: 0;
+ transition: transform 1s;
+}
+
+.col-sm-4:nth-child(even):hover {
+ transform: rotateX(180deg);
+}
+.col-sm-4:nth-child(odd):hover {
+ transform: rotateZ(180deg);
+}

@@ -44,7 +44,7 @@ const Contact = () => {
  });
  return (
   <React.Fragment>
-   <div className="form-container">
+   <div className="contact-container">
     <p className="opening-tag html-snippets">&lt;html &gt;</p>
     <p className="html-snippets"> &lt;body &gt;</p>
     <p className="html-snippets">&lt;h1 &gt;</p>
