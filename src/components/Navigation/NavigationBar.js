@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import Transition from '../UIelements/Transition';
+import Transition from '../UIelements/animation/Transition';
 
 import './NavigationBar.css';
 import NavLinks from './Navlinks';

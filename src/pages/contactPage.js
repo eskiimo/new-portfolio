@@ -10,7 +10,7 @@ import {
  VALIDATOR_MINLENGTH,
  VALIDATOR_REQUIRE,
 } from '../components/util/validators';
-import Transition from '../components/UIelements/Transition';
+import Transition from '../components/UIelements/animation/Transition';
 import { useForm } from '../components/hooks/form-hook';
 
 const Contact = () => {

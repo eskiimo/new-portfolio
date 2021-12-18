@@ -1,8 +1,31 @@
 .skills-container {
  margin: 0;
+ width: 95%;
  box-sizing: border-box;
 }
+.skills-container .row {
+ justify-content: center;
+ align-items: center;
+}
 
+.big-row {
+ height: 100vh;
+}
+.skills-container .headline {
+ font-size: 3vw;
+ text-align: start;
+ color: rgb(8, 253, 216);
+ font-weight: 900;
+ font-family: 'Roboto Slab', serif;
+}
+.skills-paragraph {
+ color: white;
+ font-size: 1.2rem;
+ font-family: 'Roboto Slab', serif;
+ font-weight: 900;
+ text-align: start;
+ margin-left: 10px;
+}
 .skills-container .col-sm-6 {
  padding: 0;
  margin: 0;
