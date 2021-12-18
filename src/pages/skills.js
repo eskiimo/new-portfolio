@@ -7,7 +7,7 @@ const Skills = () => {
  return (
   <Container className="skills-container">
    <Row className="big-row">
-    <Col>
+    <Col md="12">
      <div>
       <p className="headline">Skills & Experience</p>
       <p className="skills-paragraph">
