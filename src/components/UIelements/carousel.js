@@ -12,11 +12,11 @@ import {
 import './carousel.css';
 
 const NewCarousel = () => {
- const [list, setList] = useState([
+ const list = [
   '/assets/work/harth-1.jpg',
   '/assets/work/harth-2.jpg',
   '/assets/work/harth-3.jpg',
- ]);
+ ];
  const [index, setIndex] = useState(0);
  //  const [animation, setAnimation] = useState(false);
 

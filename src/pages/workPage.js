@@ -1,14 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import NewCarousel from '../components/UIelements/carousel';
 import './workPage.css';
 
 const Work = () => {
+ const [list, setList] = useState([
+  '/assets/work/harth-1.jpg',
+  '/assets/work/harth-2.jpg',
+  '/assets/work/harth-3.jpg',
+ ]);
+ const [index, setIndex] = useState(0);
+ const next = () => {
+  console.log('next');
+  if (index === list.length - 1) {
+   setIndex(0);
+  } else {
+   setIndex(index + 1);
+  }
+ };
+ const prev = () => {
+  console.log('prev');
+  if (index === 0) {
+   setIndex(list.length - 1);
+  } else {
+   setIndex(index - 1);
+  }
+ };
  return (
   <Container className="work-container">
    <Row className="work-row">
     <Col sm="6" className="work-image-column">
-     <NewCarousel />
+     {/* <NewCarousel /> */}
+     <Row className="align-items-center">
+      {/* <Col>
+       {' '}
+       <button onClick={prev}>L</button>{' '}
+      </Col> */}
+      <Col>
+       {' '}
+       <div className="work-image"></div>{' '}
+      </Col>
+      {/* <Col>
+       <button onClick={next}>R</button>
+      </Col> */}
+     </Row>
     </Col>
     <Col className="work-info-paragraph" sm="6">
      <div>
@@ -26,6 +61,7 @@ const Work = () => {
      </div>
     </Col>
    </Row>
+   <br />
   </Container>
  );
 };

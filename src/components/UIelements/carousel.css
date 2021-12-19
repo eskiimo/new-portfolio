@@ -1,5 +1,5 @@
 .carousel_wrap {
- /* margin: 50px 0px; */
+ max-height: 500px;
 }
 .carousel_img {
  width: 100%;

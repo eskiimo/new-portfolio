@@ -23,6 +23,7 @@
 }
 .work-image-column img {
  border: 2px solid rgb(8, 253, 216);
+ max-width: 300px;
 }
 
 .work-info-paragraph {
@@ -44,4 +45,26 @@
  font-weight: 550;
  text-align: start;
  margin-left: 10px;
+}
+
+.work-image {
+ animation: changeBg 15s infinite;
+ width: 240px;
+ height: 420px;
+ border: 1px solid rgb(8, 253, 216);
+}
+@keyframes changeBg {
+ 0%,
+ 100% {
+  background-image: url('../../public/assets/work/harth-1.jpg');
+ }
+ 25% {
+  background-image: url('../../public/assets/work/harth-2.jpg');
+ }
+ 50% {
+  background-image: url('../../public/assets/work/harth-3.jpg');
+ }
+ 75% {
+  background-image: url('../../public/assets/work/harth-1.jpg');
+ }
 }
