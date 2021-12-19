@@ -1,0 +1,46 @@
+.work-container {
+ width: 95%;
+}
+
+.work-row {
+ margin-top: 60px;
+}
+.carousel {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.carousel button {
+ border-radius: 50%;
+ border: 1px solid rgb(8, 253, 216);
+ height: 30px;
+ width: 30px;
+}
+.work-image-column {
+ justify-content: center;
+ display: flex;
+}
+.work-image-column img {
+ height: 400px;
+ border: 2px solid rgb(8, 253, 216);
+}
+
+.work-info-paragraph {
+ display: flex;
+ align-items: center;
+}
+.work-container .headline {
+ font-size: 4vw;
+ text-align: start;
+ color: rgb(8, 253, 216);
+ font-weight: 900;
+ font-family: 'Roboto Slab', serif;
+}
+.harth-paragraph {
+ color: white;
+ font-size: 1.2rem;
+ font-family: 'Roboto Slab', serif;
+ font-weight: 550;
+ text-align: start;
+ margin-left: 10px;
+}
