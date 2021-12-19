@@ -1,0 +1,12 @@
+.carousel_wrap {
+ /* margin: 50px 0px; */
+}
+.carousel_img {
+ width: 100%;
+}
+
+.carousel {
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}

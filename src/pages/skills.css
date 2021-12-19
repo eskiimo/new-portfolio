@@ -3,6 +3,11 @@
  width: 95%;
  box-sizing: border-box;
 }
+/* @media (max-width: 800px) {
+ .skills-container {
+  margin-top: 50px;
+ }
+} */
 .skills-container .row {
  justify-content: center;
  align-items: center;
@@ -12,7 +17,7 @@
  height: 100vh;
 }
 .skills-container .headline {
- font-size: 3vw;
+ font-size: 4vw;
  text-align: start;
  color: rgb(8, 253, 216);
  font-weight: 900;

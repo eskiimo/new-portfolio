@@ -20,7 +20,7 @@ const Skills = () => {
       </p>
      </div>
     </Col>
-    <Col>
+    <Col xs="11" md="6">
      <Row className="list-parent">
       <Col xs="8" sm="4">
        {' '}
@@ -31,19 +31,22 @@ const Skills = () => {
        <Gimage link="/assets/csslogo.png" />
       </Col>
       <Col xs="8" sm="4">
+       <Gimage link="/assets/jslogo.png" />
+      </Col>
+      <Col xs="8" sm="4">
        <Gimage link="/assets/githublogo.png" />
       </Col>
       <Col xs="8" sm="4">
        <Gimage link="/assets/gitlogo.png" />
       </Col>
       <Col xs="8" sm="4">
-       <Gimage link="/assets/jslogo.png" />
-      </Col>
-      <Col xs="8" sm="4">
        <Gimage link="/assets/reactlogo.png" />
       </Col>
       <Col xs="12" sm="4">
        <Gimage link="/assets/flutterlogo.png" />
+      </Col>
+      <Col xs="12" sm="4">
+       <Gimage link="/assets/dartlogo.png" />
       </Col>
      </Row>
     </Col>
