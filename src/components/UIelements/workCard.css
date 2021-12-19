@@ -13,3 +13,67 @@
  height: 100%;
  object-fit: cover;
 } */
+.work-row {
+ margin: 60px 0;
+ position: relative;
+}
+.close-button {
+ position: absolute;
+ width: 30px;
+ height: 30px;
+ top: 10px;
+ right: 10px;
+ width: fit-content;
+ background-color: transparent;
+ border-radius: 50%;
+ border: 1px solid rgb(8, 253, 216);
+ color: rgb(8, 253, 216);
+}
+.work-image-column {
+ justify-content: center;
+ display: flex;
+ align-items: center;
+}
+.work-image-column img {
+ border: 2px solid rgb(8, 253, 216);
+ max-width: 300px;
+}
+
+.work-info-paragraph {
+ display: flex;
+ align-items: center;
+}
+.work-container .headline {
+ font-size: 4vw;
+ text-align: start;
+ color: rgb(8, 253, 216);
+ font-weight: 900;
+ font-family: 'Roboto Slab', serif;
+ margin-top: 10px;
+}
+.harth-paragraph {
+ color: white;
+ font-size: 1.2rem;
+ font-family: 'Roboto Slab', serif;
+ font-weight: 550;
+ text-align: start;
+ margin-left: 10px;
+}
+.work-image {
+ animation: changeBg 15s infinite;
+ width: 240px;
+ height: 420px;
+ border: 1px solid rgb(8, 253, 216);
+}
+@keyframes changeBg {
+ 0%,
+ 100% {
+  background-image: url('../../../public/assets/work/harth-1.jpg');
+ }
+ 33% {
+  background-image: url('../../../public/assets/work/harth-2.jpg');
+ }
+ 66% {
+  background-image: url('../../../public/assets/work/harth-3.jpg');
+ }
+}

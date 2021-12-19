@@ -1,10 +1,8 @@
 .work-container {
- width: 95%;
+ width: 100%;
+ margin: 0;
 }
 
-.work-row {
- margin-top: 60px;
-}
 .carousel {
  display: flex;
  flex-direction: row;
@@ -16,55 +14,44 @@
  height: 30px;
  width: 30px;
 }
-.work-image-column {
+.work-modal {
+ height: 20rem;
+ width: 100%;
+}
+.project-card {
+ display: flex;
+ text-align: center;
  justify-content: center;
- display: flex;
  align-items: center;
 }
-.work-image-column img {
- border: 2px solid rgb(8, 253, 216);
- max-width: 300px;
+.cards-row .col-12 {
+ padding: 0;
+ margin: 0;
+}
+.project-card img {
+ box-sizing: content-box;
+ margin: 0;
+ object-fit: fill;
+ height: 100%;
+ width: 100%;
 }
 
-.work-info-paragraph {
+.cards-row {
  display: flex;
- align-items: center;
-}
-.work-container .headline {
- font-size: 4vw;
- text-align: start;
- color: rgb(8, 253, 216);
- font-weight: 900;
- font-family: 'Roboto Slab', serif;
- margin-top: 10px;
-}
-.harth-paragraph {
- color: white;
- font-size: 1.2rem;
- font-family: 'Roboto Slab', serif;
- font-weight: 550;
- text-align: start;
- margin-left: 10px;
+ align-items: baseline;
+ justify-content: flex-start;
+ align-content: space-between;
+ flex-wrap: wrap;
+ flex-direction: row;
+ padding: 0;
+ margin: 0;
+ max-width: 100%;
 }
 
-.work-image {
- animation: changeBg 15s infinite;
- width: 240px;
- height: 420px;
- border: 1px solid rgb(8, 253, 216);
+.place-item__modal-content {
+ padding: 0;
 }
-@keyframes changeBg {
- 0%,
- 100% {
-  background-image: url('../../public/assets/work/harth-1.jpg');
- }
- 25% {
-  background-image: url('../../public/assets/work/harth-2.jpg');
- }
- 50% {
-  background-image: url('../../public/assets/work/harth-3.jpg');
- }
- 75% {
-  background-image: url('../../public/assets/work/harth-1.jpg');
- }
+
+.place-item__modal-actions {
+ text-align: right;
 }
