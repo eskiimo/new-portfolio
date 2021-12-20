@@ -3,11 +3,7 @@
  width: 95%;
  box-sizing: border-box;
 }
-/* @media (max-width: 800px) {
- .skills-container {
-  margin-top: 50px;
- }
-} */
+
 .skills-container .row {
  justify-content: center;
  align-items: center;

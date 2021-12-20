@@ -8,6 +8,7 @@
  margin: 0 50px;
  text-align: start;
  color: white;
+ z-index: 1;
 }
 
 .form {
@@ -44,4 +45,8 @@
  text-align: start;
  color: white;
  margin-left: 10%;
+}
+
+.toast {
+ z-index: 100;
 }

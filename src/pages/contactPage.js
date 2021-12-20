@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Form, FormGroup } from 'reactstrap';
+import {
+ Form,
+ FormGroup,
+ Modal,
+ ModalHeader,
+ ModalBody,
+ ModalFooter,
+} from 'reactstrap';
 import Buton from '../components/FormElements/Button';
 import './contactPage.css';
 
@@ -15,6 +22,7 @@ import { useForm } from '../components/hooks/form-hook';
 
 const Contact = () => {
  const [bool, setBool] = useState(false);
+ const [isToast, setIsToast] = useState(false);
  const [formState, inputHandler] = useForm(
   {
    name: { value: '', isValid: false },
@@ -23,6 +31,12 @@ const Contact = () => {
   },
   false
  );
+ const showToast = () => {
+  setIsToast(true);
+ };
+ const hideToast = () => {
+  setIsToast(false);
+ };
 
  useEffect(() => {
   setBool(true);
@@ -31,7 +45,7 @@ const Contact = () => {
  const onSubmitHandler = (event) => {
   event.preventDefault();
   console.log(formState.inputs);
-  // auth.login(); //send to BackEnd
+  showToast();
  };
 
  let h13 = ['C', 'o', 'n', ' t', 'a', 'c', 't', '', 'm', 'e'];
@@ -106,6 +120,20 @@ const Contact = () => {
     </Form>
     <p className="html-snippets"> &lt;/body &gt;</p>
    </div>
+   <Modal
+    backdrop={true}
+    centered
+    fullscreen="sm"
+    size="xs"
+    toggle={showToast}
+    isOpen={isToast}
+   >
+    <ModalHeader toggle={isToast}> &lt;3</ModalHeader>
+    <ModalBody>thank you !</ModalBody>
+    <ModalFooter>
+     <Buton text="Close" onClick={hideToast} />
+    </ModalFooter>
+   </Modal>
   </React.Fragment>
  );
 };

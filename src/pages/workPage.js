@@ -7,7 +7,7 @@ import pic from './logos/harth-1.jpg';
 const PROJECT_LIST = [
  {
   logo: logo,
-  name: 'harth',
+  name: 'Harth - حارث ',
   image: pic,
   p1: ' Harith application The fastest way to buy and sell crops, farm equipment  and everything related to agriculture and farmers You can display products near you and choose the categories that suit your needs Please have apleasant experience!',
   p2: 'Built the Front End with Flutter -cross platform framework- so the application is available on Google Play Store and Apple Store',
