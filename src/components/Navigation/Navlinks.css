@@ -4,6 +4,7 @@ a {
  font-size: 0.85rem;
  text-decoration: none;
  line-height: 40px;
+ display: block;
 }
 
 a:hover {

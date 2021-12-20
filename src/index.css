@@ -19,4 +19,6 @@ input {
  margin-left: 2rem;
  margin-bottom: 0;
  font-family: 'Corinthia', cursive;
+
+ overflow-y: hidden;
 }
