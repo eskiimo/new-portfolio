@@ -128,8 +128,12 @@ const Contact = () => {
     toggle={showToast}
     isOpen={isToast}
    >
-    <ModalHeader toggle={isToast}> &lt;3</ModalHeader>
-    <ModalBody>thank you !</ModalBody>
+    <ModalHeader toggle={isToast}>
+     <i class="fas fa-kiss-wink-heart"></i>{' '}
+    </ModalHeader>
+    <ModalBody>
+     <p>thank you !</p>
+    </ModalBody>
     <ModalFooter>
      <Buton text="Close" onClick={hideToast} />
     </ModalFooter>

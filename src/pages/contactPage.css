@@ -47,6 +47,8 @@
  margin-left: 10%;
 }
 
-.toast {
- z-index: 100;
+.modal-body p {
+ color: white;
+ font-family: 'Anton', sans-serif;
+ font-size: 2rem;
 }
