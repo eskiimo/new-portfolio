@@ -19,7 +19,7 @@ const PROJECT_LIST = [
 export const RenderProjectCards = (props) =>
  props.list.map((project, index) => {
   return (
-   <Col xs="12" sm="6" md="4" lg="3">
+   <Col xs="11" sm="6" md="3" lg="2">
     <div
      onClick={() => {
       props.onClick(index);
