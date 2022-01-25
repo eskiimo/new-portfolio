@@ -1,21 +1,22 @@
 a {
- text-align: center;
- color: white;
- font-size: 0.85rem;
- text-decoration: none;
- line-height: 40px;
- display: block;
+   text-align: center;
+   color: white;
+   font-size: 0.95rem;
+   text-decoration: none;
+   line-height: 40px;
+   display: block;
 }
 
 a:hover {
- font-size: 0.9rem;
- text-align: center;
- color: rgb(253, 33, 85);
- text-decoration: none;
+   font-size: 1rem;
+   text-align: center;
+   color: rgb(253, 33, 85);
+   text-decoration: none;
+   text-shadow: 1px 1px rgb(8, 253, 216);
 }
 
 li.nav-item {
- border-bottom: 0.1px solid rgb(29, 29, 29);
- margin-top: 3px;
- font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   border-bottom: 0.1px solid rgb(29, 29, 29);
+   margin-top: 3px;
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
 }
