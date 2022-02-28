@@ -42,10 +42,33 @@ const Contact = () => {
       setBool(true);
    }, []);
    // const
-   const onSubmitHandler = (event) => {
+   const onSubmitHandler = async (event) => {
       event.preventDefault();
-      console.log(formState.inputs);
-      showToast();
+      // console.log(formState.inputs);
+
+      try {
+         const response = await fetch('http://localhost:5000/api/messages', {
+            method: 'POST',
+            body: JSON.stringify({
+               name: formState.inputs.name.value,
+               email: formState.inputs.email.value,
+               message: formState.inputs.message.value,
+            }),
+            headers: {
+               'Content-Type': 'application/json',
+               // Authorization: 'Bearer random token will not check',
+            },
+         });
+         const responseData = await response.json();
+
+         // if (!response.ok) {
+         //    throw new Error('response not ok ');
+         // }
+         showToast();
+         console.log(responseData);
+      } catch (e) {
+         console.log(e);
+      }
    };
 
    let h13 = ['C', 'o', 'n', ' t', 'a', 'c', 't', '', 'm', 'e'];
