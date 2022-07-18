@@ -92,6 +92,8 @@ const Contact = () => {
                I'm interested in freelance opportunities , especially ambitious
                or large projects. However, if you have other request or
                question, don't hesitate to use the form.
+               <br />
+               or simply visit my fb page <i class="fa-solid fa-hand-peace"></i>
             </p>
             <p className="html-snippets"> &lt;form &gt;</p>
             <Form className="form" onSubmit={onSubmitHandler}>
