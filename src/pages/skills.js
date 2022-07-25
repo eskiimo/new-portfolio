@@ -7,7 +7,7 @@ const Skills = () => {
    return (
       <Container className="skills-container">
          <Row className="big-row">
-            <Col xs="11" md="6">
+            <Col xs="11" md="6" className="kalam">
                <div>
                   <p className="headline">Skills & Experience</p>
                   <p className="skills-paragraph">
@@ -20,7 +20,7 @@ const Skills = () => {
                   </p>
                </div>
             </Col>
-            <Col xs="11" md="6">
+            <Col xs="11" md="6" className="anime">
                <Row className="list-parent">
                   <Col className="center" xs="8" sm="4">
                      <Gimage link="/assets/reactlogo.png" />
@@ -45,10 +45,10 @@ const Skills = () => {
                      <Gimage link="/assets/gitlogo.png" />
                   </Col>
 
-                  <Col className=" six" xs="12" sm="4">
+                  <Col className="orbit6 six" xs="12" sm="4">
                      <Gimage link="/assets/flutterlogo.png" />
                   </Col>
-                  <Col className=" seven" xs="12" sm="4">
+                  <Col className="orbit7 seven" xs="12" sm="4">
                      <Gimage link="/assets/dartlogo.png" />
                   </Col>
                </Row>
