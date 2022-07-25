@@ -100,3 +100,21 @@
     background-color: transparent;
     border-radius: 50px;
 }
+.anjuna-btn{
+    z-index: 1000;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    /* background-image: url('../public/assets/'); */
+    animation:5s spin infinite linear;
+    border-radius: 50px;
+}
+
+.playlist{
+    width: auto;
+    margin-left: 15vw;
+    justify-content: end;
+}

@@ -93,10 +93,15 @@ const Contact = () => {
                or large projects. However, if you have other request or
                question, don't hesitate to use the form.
                <br />
-               or simply visit my fb page <i class="fa-solid fa-hand-peace"></i>
+               or simply visit my fb page{' '}
+               <i className="fa-solid fa-hand-peace"></i>
             </p>
             <p className="html-snippets"> &lt;form &gt;</p>
-            <Form className="form" onSubmit={onSubmitHandler}>
+            <Form
+               autoComplete="off"
+               className="form"
+               onSubmit={onSubmitHandler}
+            >
                <Transition bool={bool}>
                   <FormGroup>
                      <CustomInput
@@ -153,8 +158,8 @@ const Contact = () => {
             toggle={showToast}
             isOpen={isToast}
          >
-            <ModalHeader toggle={isToast}>
-               <i class="fas fa-kiss-wink-heart"></i>{' '}
+            <ModalHeader toggle={showToast}>
+               <i className="fas fa-kiss-wink-heart"></i>{' '}
             </ModalHeader>
             <ModalBody>
                <p>thank you !</p>
