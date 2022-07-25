@@ -47,3 +47,56 @@
 .main-content-hide {
  display: none;
 }
+
+.record{
+    z-index: 999;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    border-radius: 50px;
+}
+
+.record-cover-play{
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    
+    border-radius: 50px;
+    background-image: url("../public/assets/songs/record.png");
+    background-size: contain;
+    animation:10s spin infinite linear;
+}
+.record-cover-pause{
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    
+    border-radius: 50px;
+    background-image: url("../public/assets/songs/record.png");
+    background-size: contain;
+    /* animation:10s spin infinite linear; */
+}
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.record-btn{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 50px;
+}
