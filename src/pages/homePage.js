@@ -1,5 +1,4 @@
 import React from 'react';
-import Buton from '../components/FormElements/Button';
 import './homePage.css';
 
 const Home = () => {
