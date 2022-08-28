@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 // import NavigationBar from './components/Navigation/NavigationBar';
 import About from './pages/aboutPage';
