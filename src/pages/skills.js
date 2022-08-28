@@ -22,7 +22,7 @@ const Skills = () => {
             </Col>
             <Col xs="11" md="6" className="anime">
                <Row className="list-parent">
-                  <Col className="center" xs="8" sm="4">
+                  <Col className="center react-logo" xs="8" sm="4">
                      <Gimage link="/assets/reactlogo.png" />
                   </Col>
                   <Col className="orbit1 one" xs="8" sm="4">

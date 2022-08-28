@@ -45,8 +45,6 @@
 }
 
 
-
-
 .orbit1{
     position: absolute;
     right: 25%;
@@ -80,6 +78,23 @@
 	to   {  transform: rotate(360deg) translateX(270px) rotate(-360deg); }
 }
 
+@media (max-width: 800px) {
+    .orbit1,.orbit2,.orbit3,.orbit4,.orbit5,.orbit6,.orbit7 {
+        /* display: none; */
+    }
+    .react-logo{
+        display: none;
+    }
+    div[class^="orbit"]{
+        display: none;
+    }
+   }
+   @media (max-width: 1800px) {
+    .anime{
+        height: 500px;
+    }
+   }
+
 
 .orbit2{
     position: absolute;
@@ -95,7 +110,7 @@
  
 }
 @-webkit-keyframes orbit2 {
-	from { 	-webkit-transform: rotate(51deg) translateX(270px) rotate(-51deg); }
+	from { 	-webkit-transform: rotate(calc(1+50deg)) translateX(270px) rotate(-51deg); }
 	to   {  -webkit-transform: rotate(411deg) translateX(270px) rotate(-411deg); }
 }
 

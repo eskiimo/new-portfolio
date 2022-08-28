@@ -65,9 +65,10 @@ const App = () => {
                   <></>
                )}
 
-               <div className={`${'record-cover-' + playMode}`}>
-                  <button onClick={toggleAudio} className="record-btn"></button>
-               </div>
+               <button
+                  onClick={toggleAudio}
+                  className={`${'record-cover-' + playMode} record-btn`}
+               ></button>
 
                {/* <button onClick={toggleAnjuna} className="anjuna-btn"></button> */}
 
