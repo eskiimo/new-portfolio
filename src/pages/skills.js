@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Gimage from '../components/UIelements/animation/gImage';
 import './skills.css';
 
 const Skills = () => {
@@ -8,50 +7,28 @@ const Skills = () => {
       <Container className="skills-container">
          <Row className="big-row">
             <Col xs="11" md="6" className="kalam">
-               <div>
-                  <p className="headline">Skills & Experience</p>
-                  <p className="skills-paragraph">
-                     The main area of my expertise is front-end development,
-                     HTML, CSS, JS, building small and medium web apps.
-                  </p>
-                  <p className="skills-paragraph">
-                     Also I worked with Flutter, developed and deployed to both
-                     Google & Apple.
-                  </p>
+               <div className="dang-skills">
+                  <h1>Tools & Frameworks</h1>
+                  <p className="skills-paragraph">HTML, CSS, JS</p>
+                  <p className="skills-paragraph">React.js</p>
+                  <hr />
+                  <p className="skills-paragraph">Node.js</p>
+                  <p className="skills-paragraph">Express</p>
+                  <p className="skills-paragraph">MongoBD</p>
+                  <hr />
+                  <p className="skills-paragraph">Flutter</p>
+                  <p className="skills-paragraph">Dart</p>
                </div>
             </Col>
             <Col xs="11" md="6" className="anime">
-               <Row className="list-parent">
-                  <Col className="center" xs="8" sm="4">
-                     <Gimage link="/assets/reactlogo.png" />
-                  </Col>
-                  <Col className="orbit1 one" xs="8" sm="4">
-                     {' '}
-                     <Gimage link="/assets/htmllogo.png" />
-                  </Col>
-
-                  <Col className="orbit2 two" xs="8" sm="4">
-                     {' '}
-                     <Gimage link="/assets/csslogo.png" />
-                  </Col>
-                  <Col className="orbit3 three" xs="8" sm="4">
-                     <Gimage link="/assets/jslogo.png" />
-                  </Col>
-                  <Col className="orbit4 four" xs="8" sm="4">
-                     <Gimage link="/assets/githublogo.png" />
-                  </Col>
-
-                  <Col className="orbit5 five" xs="8" sm="4">
-                     <Gimage link="/assets/gitlogo.png" />
-                  </Col>
-
-                  <Col className="orbit6 six" xs="12" sm="4">
-                     <Gimage link="/assets/flutterlogo.png" />
-                  </Col>
-                  <Col className="orbit7 seven" xs="12" sm="4">
-                     <Gimage link="/assets/dartlogo.png" />
-                  </Col>
-               </Row>
+               <div className="dang-skills">
+                  <h1>Experience</h1>
+                  <p className="skills-paragraph">Frontend</p>
+                  <hr />
+                  <p className="skills-paragraph">Backend</p>
+                  <hr />
+                  <p className="skills-paragraph">Mobile Apps.</p>
+               </div>
             </Col>
          </Row>
       </Container>
