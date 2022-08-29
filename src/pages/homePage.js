@@ -3,151 +3,151 @@ import './homePage.css';
 
 const Home = () => {
    return (
-      <div className="home-container">
-         <div class="hello-parent">
+      <div calssName="home-container">
+         <div calssName="hello-parent">
             <svg
-               class="hello-word"
+               calssName="hello-word"
                width="365"
                height="365"
                viewBox="0 0 365 365"
             >
                <g id="H-letter">
                   <line
-                     class="H-left-stroke"
+                     calssName="H-left-stroke"
                      x1="17"
                      y1="0"
                      x2="17"
                      y2="124"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="H-mid-stroke"
+                     calssName="H-mid-stroke"
                      x1="33"
                      y1="62"
                      x2="68"
                      y2="62"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="H-right-stroke"
+                     calssName="H-right-stroke"
                      x1="84"
                      y1="0"
                      x2="84"
                      y2="124"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                </g>
 
                <g id="E-letter">
                   <line
-                     class="E-left-stroke"
+                     calssName="E-left-stroke"
                      x1="138"
                      y1="0"
                      x2="138"
                      y2="124"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="E-top-stroke"
+                     calssName="E-top-stroke"
                      x1="154"
                      y1="17"
                      x2="201"
                      y2="17"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="E-mid-stroke"
+                     calssName="E-mid-stroke"
                      x1="154"
                      y1="62"
                      x2="196"
                      y2="62"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="E-bottom-stroke"
+                     calssName="E-bottom-stroke"
                      x1="154"
                      y1="107"
                      x2="201"
                      y2="107"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                </g>
 
                <g id="L-one-letter">
                   <line
-                     class="L-one-long-stroke"
+                     calssName="L-one-long-stroke"
                      x1="17"
                      y1="153"
                      x2="17"
                      y2="277"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="L-one-short-stroke"
+                     calssName="L-one-short-stroke"
                      x1="33"
                      y1="260"
                      x2="77"
                      y2="260"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                </g>
 
                <g id="L-two-letter">
                   <line
-                     class="L-two-long-stroke"
+                     calssName="L-two-long-stroke"
                      x1="104"
                      y1="153"
                      x2="104"
                      y2="277"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                   <line
-                     class="L-two-short-stroke"
+                     calssName="L-two-short-stroke"
                      x1="120"
                      y1="260"
                      x2="164"
                      y2="260"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="34"
+                     strokeWidth="34"
                   />
                </g>
 
                <g id="O-letter">
                   <circle
-                     class="O-stroke"
+                     calssName="O-stroke"
                      cx="231"
                      cy="215"
                      r="48"
                      stroke="#fff"
                      fill="none"
-                     stroke-width="31"
+                     strokeWidth="31"
                   />
                </g>
 
                <g id="red-dot">
                   <circle
-                     class="red-dot"
+                     strokeWidth="red-dot"
                      cx="325"
                      cy="260"
                      r="20"
@@ -161,7 +161,7 @@ const Home = () => {
                      x2="325"
                      y2="260"
                      stroke="#45539b"
-                     class="red-dot"
+                     calssName="red-dot"
                   />
                </g>
             </svg>

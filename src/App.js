@@ -36,56 +36,58 @@ const App = () => {
          ) : (
             <></>
          )}
-         <section>
-            <Home />
-         </section>
-         <section>
-            <About />
-         </section>
-         <section>
-            <Skills />
-         </section>
-         <section>
-            <Work />
-         </section>
-         <section>
-            <Contact />
-         </section>
-         <section>
-            <div className=" footer">
-               <div className="contact-icon">
-                  <a
-                     href="//www.linkedin.com/in/kremelhosary/"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     {' '}
-                     <i className="fab fa-linkedin"> </i>{' '}
-                  </a>
-               </div>
-               <div className="contact-icon">
-                  <a
-                     href="//github.com/eskiimo"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     {' '}
-                     <i className="fab fa-github"> </i>{' '}
-                  </a>
-               </div>
+         <div id="fullpage">
+            <section className="section">
+               <Home />
+            </section>
+            <section className="section">
+               <About />
+            </section>
+            <section className="section">
+               <Skills />
+            </section>
+            <section className="section">
+               <Work />
+            </section>
+            <section className="section">
+               <Contact />
+            </section>
+            <section className="section">
+               <div className=" footer">
+                  <div className="contact-icon">
+                     <a
+                        href="//www.linkedin.com/in/kremelhosary/"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        {' '}
+                        <i className="fab fa-linkedin"> </i>{' '}
+                     </a>
+                  </div>
+                  <div className="contact-icon">
+                     <a
+                        href="//github.com/eskiimo"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        {' '}
+                        <i className="fab fa-github"> </i>{' '}
+                     </a>
+                  </div>
 
-               <div className="contact-icon">
-                  <a
-                     href="//fb.com/kremkamall"
-                     target="_blank"
-                     rel="noreferrer"
-                  >
-                     {' '}
-                     <i className="fab fa-facebook"> </i>{' '}
-                  </a>
+                  <div className="contact-icon">
+                     <a
+                        href="//fb.com/kremkamall"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
+                        {' '}
+                        <i className="fab fa-facebook"> </i>{' '}
+                     </a>
+                  </div>
                </div>
-            </div>
-         </section>
+            </section>
+         </div>
       </div>
    );
 };

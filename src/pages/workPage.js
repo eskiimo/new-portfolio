@@ -20,7 +20,7 @@ const PROJECT_LIST = [
 export const RenderProjectCards = (props) =>
    props.list.map((project, index) => {
       return (
-         <Col xs="11" sm="6" md="3" lg="2">
+         <Col key={project.name} xs="11" sm="6" md="3" lg="2">
             <div
                onClick={() => {
                   props.onClick(index);
@@ -45,7 +45,6 @@ const Work = () => {
    const [selectedProject, setSelProject] = useState(PROJECT_LIST[0]);
    const handleOnClick = (index) => {
       setSelProject(PROJECT_LIST[index]);
-      console.log(index);
       showModal();
    };
    return (
