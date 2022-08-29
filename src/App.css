@@ -29,7 +29,7 @@ section{
 
 .record-cover-play{
     z-index: 1000;
-    position: absolute;
+    position:fixed;
     top: 10px;
     right: 20px;
     width: 80px;
@@ -43,7 +43,7 @@ section{
 }
 .record-cover-pause{
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 20px;
     width: 80px;
@@ -69,3 +69,28 @@ section{
     border-radius: 50px;
 }
 
+.footer {
+    width: 12vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+   }
+   .contact-icon  i{
+    height: max-content;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: auto;
+    font-size: 30px;
+    color:  hsla(230,40%,50%,1);
+   }
+   .footer .col {
+    height: 25vh;
+    padding: 0px 0px;
+    margin: 0;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }

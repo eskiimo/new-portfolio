@@ -18,7 +18,7 @@ const Home = () => {
                      y1="0"
                      x2="17"
                      y2="124"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -28,7 +28,7 @@ const Home = () => {
                      y1="62"
                      x2="68"
                      y2="62"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -38,7 +38,7 @@ const Home = () => {
                      y1="0"
                      x2="84"
                      y2="124"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -51,7 +51,7 @@ const Home = () => {
                      y1="0"
                      x2="138"
                      y2="124"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -61,7 +61,7 @@ const Home = () => {
                      y1="17"
                      x2="201"
                      y2="17"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -71,7 +71,7 @@ const Home = () => {
                      y1="62"
                      x2="196"
                      y2="62"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -81,7 +81,7 @@ const Home = () => {
                      y1="107"
                      x2="201"
                      y2="107"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -94,7 +94,7 @@ const Home = () => {
                      y1="153"
                      x2="17"
                      y2="277"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -104,7 +104,7 @@ const Home = () => {
                      y1="260"
                      x2="77"
                      y2="260"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -117,7 +117,7 @@ const Home = () => {
                      y1="153"
                      x2="104"
                      y2="277"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -127,7 +127,7 @@ const Home = () => {
                      y1="260"
                      x2="164"
                      y2="260"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="34"
                   />
@@ -139,7 +139,7 @@ const Home = () => {
                      cx="231"
                      cy="215"
                      r="48"
-                     stroke="#000"
+                     stroke="#fff"
                      fill="none"
                      stroke-width="31"
                   />
@@ -151,7 +151,7 @@ const Home = () => {
                      cx="325"
                      cy="260"
                      r="20"
-                     fill="#FF5851"
+                     fill="#45539b"
                      stroke="none"
                   />
 
@@ -160,7 +160,7 @@ const Home = () => {
                      y1="260"
                      x2="325"
                      y2="260"
-                     stroke="#FF5851"
+                     stroke="#45539b"
                      class="red-dot"
                   />
                </g>

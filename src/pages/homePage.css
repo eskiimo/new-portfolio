@@ -11,6 +11,7 @@ html, body, .hello-parent {
   
   .hello-word {
     margin:auto;
+    color: aliceblue;
   }
   /* H Animation */
   

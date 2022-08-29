@@ -9,11 +9,11 @@ const About = () => {
       <Container className="info-container align-content-center">
          <Col xs="12">
             <Row>
-               <Col xs="8" sm="3">
+               <Col xs="8" lg="3">
                   {' '}
                   <Avatar image={me} alt="kareem kamal" width="80%" />
                </Col>
-               <Col xs="8" md="9">
+               <Col xs="8" lg="9">
                   <div>
                      <div className="dang">
                         <h1 data-shadow="dang!">Developer</h1>

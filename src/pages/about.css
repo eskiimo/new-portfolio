@@ -22,7 +22,7 @@
 .info-paragraph {
     color: white;
     font-family: 'Righteous', serif;
-    font-size: 1.5em; 
+    font-size: 28px; 
     text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
 }
 .info-with-color {
@@ -44,7 +44,7 @@
     display: inline-block;
     color: white;
     font-family: 'Righteous', serif;
-    font-size: 10vw; 
+    font-size: 8vw; 
     text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
     }
     h1:after {

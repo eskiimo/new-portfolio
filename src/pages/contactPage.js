@@ -77,71 +77,71 @@ const Contact = () => {
 
    return (
       <>
-         {loading ? (
-            <div className="contact-container">
-               <LoadingSpinner />
+         <div className="contact-container">
+            <p className="opening-tag html-snippets">&lt;html &gt;</p>
+            <p className="html-snippets"> &lt;body &gt;</p>
+            <p className="html-snippets">&lt;h1 &gt;</p>
+
+            <div className="dang-contact">
+               <h1>CONTACT ME!</h1>
             </div>
-         ) : (
-            <div className="contact-container">
-               <p className="opening-tag html-snippets">&lt;html &gt;</p>
-               <p className="html-snippets"> &lt;body &gt;</p>
-               <p className="html-snippets">&lt;h1 &gt;</p>
+            <p className="html-snippets"> &lt;p &gt;</p>
+            <p className="contact-message">
+               I'm interested in freelance opportunities , especially ambitious
+               or large projects. However, if you have other request or
+               question, don't hesitate to use the form.
+               <br />
+               or simply visit my fb page{' '}
+               <i className="fa-solid fa-hand-peace"></i>
+            </p>
+            <p className="html-snippets"> &lt;form &gt;</p>
+            <Form
+               autoComplete="off"
+               className="form"
+               onSubmit={onSubmitHandler}
+            >
+               <Transition bool={bool}>
+                  <FormGroup>
+                     <CustomInput
+                        id="name"
+                        placeholder="Name"
+                        type="text"
+                        errorText="name cannot be blank!!"
+                        validators={[VALIDATOR_REQUIRE()]}
+                        onInput={inputHandler}
+                     />
+                  </FormGroup>
+               </Transition>
+               <Transition bool={bool}>
+                  <FormGroup>
+                     <CustomInput
+                        id="email"
+                        placeholder="Email"
+                        type="email"
+                        errorText="enter a valid email !!"
+                        validators={[VALIDATOR_EMAIL()]}
+                        onInput={inputHandler}
+                     />
+                  </FormGroup>
+               </Transition>
 
-               <div className="dang-contact">
-                  <h1>CONTACT ME!</h1>
-               </div>
-               <p className="html-snippets"> &lt;p &gt;</p>
-               <p className="contact-message">
-                  I'm interested in freelance opportunities , especially
-                  ambitious or large projects. However, if you have other
-                  request or question, don't hesitate to use the form.
-                  <br />
-                  or simply visit my fb page{' '}
-                  <i className="fa-solid fa-hand-peace"></i>
-               </p>
-               <p className="html-snippets"> &lt;form &gt;</p>
-               <Form
-                  autoComplete="off"
-                  className="form"
-                  onSubmit={onSubmitHandler}
-               >
-                  <Transition bool={bool}>
-                     <FormGroup>
-                        <CustomInput
-                           id="name"
-                           placeholder="Name"
-                           type="text"
-                           errorText="idiot!!"
-                           validators={[VALIDATOR_REQUIRE()]}
-                           onInput={inputHandler}
-                        />
-                     </FormGroup>
-                  </Transition>
-                  <Transition bool={bool}>
-                     <FormGroup>
-                        <CustomInput
-                           id="email"
-                           placeholder="Email"
-                           type="email"
-                           errorText="idiot!!"
-                           validators={[VALIDATOR_EMAIL()]}
-                           onInput={inputHandler}
-                        />
-                     </FormGroup>
-                  </Transition>
-
-                  <Transition bool={bool}>
-                     <FormGroup>
-                        <CustomInput
-                           id="message"
-                           placeholder="Message"
-                           type="textarea"
-                           errorText="idiot!!"
-                           validators={[VALIDATOR_MINLENGTH(5)]}
-                           onInput={inputHandler}
-                        />
-                     </FormGroup>
-                  </Transition>
+               <Transition bool={bool}>
+                  <FormGroup>
+                     <CustomInput
+                        id="message"
+                        placeholder="Message"
+                        type="textarea"
+                        errorText="message must be more than 5 letters !!"
+                        validators={[VALIDATOR_MINLENGTH(5)]}
+                        onInput={inputHandler}
+                     />
+                  </FormGroup>
+               </Transition>
+               {loading ? (
+                  <div className="spinner-div">
+                     <LoadingSpinner />
+                  </div>
+               ) : (
                   <div className="form-button">
                      <Buton
                         disabled={!formState.isValid}
@@ -150,11 +150,10 @@ const Contact = () => {
                         text={'Submit'}
                      />
                   </div>
-               </Form>
-               <p className="html-snippets"> &lt;/body &gt;</p>
-            </div>
-         )}
-
+               )}
+            </Form>
+            <p className="html-snippets"> &lt;/body &gt;</p>
+         </div>
          <Modal
             backdrop={true}
             centered
