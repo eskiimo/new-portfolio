@@ -4,6 +4,9 @@ import MyModal from '../components/UIelements/Modal';
 import './workPage.css';
 import logo from './logos/harth-logo.jpg';
 import pic from './logos/harth-1.jpg';
+import acadLogo from './logos/acad-mern.jpg';
+import acadHome from './logos/acad-mern-home.jpg';
+
 const PROJECT_LIST = [
    {
       logo: logo,
@@ -15,6 +18,14 @@ const PROJECT_LIST = [
          'https://play.google.com/store/apps/details?id=com.harth.store',
       appleLink:
          'https://apps.apple.com/eg/app/%D8%AD%D8%A7%D8%B1%D8%AB/id1553536945',
+   },
+   {
+      logo: acadLogo,
+      name: 'MERN',
+      image: acadHome,
+      p1: ' React, NodeJS, Express & MongoDB - The MERN Fullstack Guide',
+      p2: 'Created by Academind by Maximilian Schwarzmüller, Maximilian Schwarzmüller, Manuel Lorenz',
+      link: 'https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/',
    },
 ];
 export const RenderProjectCards = (props) =>
