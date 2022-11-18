@@ -25,7 +25,7 @@ const PROJECT_LIST = [
       image: acadHome,
       p1: ' React, NodeJS, Express & MongoDB - The MERN Fullstack Guide',
       p2: 'Created by Academind by Maximilian Schwarzmüller, Maximilian Schwarzmüller, Manuel Lorenz',
-      link: 'https://www.udemy.com/course/react-nodejs-express-mongodb-the-mern-fullstack-guide/',
+      link: 'https://acad-mern-kareem.netlify.app/',
    },
 ];
 export const RenderProjectCards = (props) =>
