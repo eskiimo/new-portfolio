@@ -49,7 +49,7 @@ const PROJECT_LIST = [
     image: "/assets/dalya-1.PNG",
     p1: "Built with Gatsby.js SSR styled with css and bootstrab",
     p2: " Art Gallery for showcasing paintings and interior design",
-    link: "https://eps-co.netlify.app",
+    link: "https://Dalyart.netlify.app",
   },
   {
     logo: "/assets/karegram-logo.png",
