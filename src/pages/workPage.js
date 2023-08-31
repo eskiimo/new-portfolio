@@ -51,6 +51,14 @@ const PROJECT_LIST = [
     p2: " Art Gallery for showcasing paintings and interior design",
     link: "https://eps-co.netlify.app",
   },
+  {
+    logo: "/assets/karegram-logo.png",
+    name: "KareGram",
+    image: "/assets/karegram.PNG",
+    p1: "SSR App created with Next.js and styled with Tailwind",
+    p2: "InstaGram Clone",
+    link: "https://karegram.vercel.app",
+  },
 ];
 export const RenderProjectCards = (props) =>
   props.list.map((project, index) => {
