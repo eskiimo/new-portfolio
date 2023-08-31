@@ -87,12 +87,12 @@
  margin: 20px 5px 0 5px;
 }
 .link-google {
- background-image: url('../../../public/assets/google-play.png');
+ background-image: url('google-play.png');
  background-repeat: no-repeat;
  background-size: 100% 100%;
 }
 .link-apple {
- background-image: url('../../../public/assets/app-store.png');
+ background-image: url('app-store.png');
  background-repeat: no-repeat;
  background-size: 100% 100%;
  z-index: 1;

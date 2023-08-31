@@ -15,7 +15,7 @@ const About = () => {
           <Col xs="8" lg="9">
             <div>
               <div className="dang">
-                <h1 data-shadow="dang!">Developer</h1>
+                <h1 data-shadow="Hi!">Developer</h1>
               </div>
               <p className="info-paragraph">
                 I'm a{" "}
