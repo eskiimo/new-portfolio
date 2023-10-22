@@ -1,25 +1,38 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
 body {
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
- scroll-behavior: smooth;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+
+  font-family: "Righteous", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: #242936;
 }
 
 code {
- font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
-
+li {
+  list-style: none;
+}
 input {
- background-color: transparent;
+  background-color: transparent;
 }
 .html-snippets {
- color: rgb(70, 70, 70);
- font-size: 1.5rem;
- margin-bottom: 0;
- font-family: 'Corinthia', cursive;
+  color: rgb(70, 70, 70);
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-family: "Corinthia", cursive;
+}
 
+.hide {
+  display: none;
 }

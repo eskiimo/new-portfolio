@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em 16vw;
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navlink {
+  margin-left: 2rem;
+  & a {
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: bold;
+    color: #00e3b3;
+  }
+  & a:hover {
+    color: #000;
+  }
+}
+
+.hamburger {
+  display: none;
+  height: 30px;
+  width: 30px;
+  font-size: 24px;
+  color: #fbb514;
+}
+
+@media (max-width: 750px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
