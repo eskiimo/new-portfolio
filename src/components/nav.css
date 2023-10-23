@@ -33,11 +33,11 @@ nav {
   color: #fbb514;
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   .nav-links {
     display: none;
   }
   .hamburger {
     display: block;
   }
-}
+} */

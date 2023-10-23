@@ -9,7 +9,7 @@ const Exp = () => {
         <div className="container ">
           <div className="text-box reveal">
             <span className="w"></span>
-            <h6> Freelance 22/9/2020 </h6>
+            <h6>Freelance 22/9/2020 </h6>
             <h4>UpWork</h4>
             <h3>Frontend Developer</h3>
           </div>
@@ -17,19 +17,9 @@ const Exp = () => {
         <div className="container">
           <div className="text-box reveal">
             <span className="w"></span>
-            <h2> BLA BLA </h2>
-          </div>
-        </div>
-        <div className="container">
-          <div className="text-box reveal">
-            <span className="w"></span>
-            <h2> BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA </h2>
-          </div>
-        </div>
-        <div className="container">
-          <div className="text-box reveal">
-            <span className="w"></span>
-            <h2> BLA </h2>
+            <h6>22/9/2020 </h6>
+            <h4>ISI</h4>
+            <h3>Fullstack Developer</h3>
           </div>
         </div>
       </div>

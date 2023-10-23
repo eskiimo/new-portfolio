@@ -1,13 +1,18 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
-import Avatar from "../components/UIelements/avatar";
+import React, { useEffect } from "react";
 import "./about.css";
+// import { useLocation } from "react-router-dom";
 
 const About = () => {
-  setInterval(() => {
-    let cursor = document.getElementsByClassName("cursor");
-    cursor[0].classList.toggle("hide");
-  }, 500);
+  // const page = useLocation();
+
+  useEffect(() => {
+    const tog = setInterval(() => {
+      let cursor = document.getElementsByClassName("cursor");
+      cursor[0].classList.toggle("hide");
+    }, 500);
+    return () => clearInterval(tog);
+  }, []);
+
   return (
     <section id="hero" className="">
       <h1 className="dang">

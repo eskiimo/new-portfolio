@@ -1,7 +1,7 @@
+import "./projectsPage.css";
 import React, { useState } from "react";
-import { Row, Col } from "reactstrap";
-import MyModal from "../components/UIelements/Modal";
-import "./workPage.css";
+// import { Row, Col } from "reactstrap";
+// import MyModal from "../components/UIelements/Modal";
 
 const PROJECT_LIST = [
   {
@@ -55,39 +55,39 @@ const PROJECT_LIST = [
     link: "https://karegram.vercel.app",
   },
 ];
-export const RenderProjectCards = (props) =>
-  props.list.map((project, index) => {
-    return (
-      <Col key={project.name} xs="11" sm="6" md="3" lg="2">
-        <div
-          onClick={() => {
-            props.onClick(index);
-          }}
-          className="project-card "
-        >
-          <img src={project.logo} alt={project.name} />
-        </div>
-      </Col>
-    );
-  });
+// export const RenderProjectCards = (props) =>
+//   props.list.map((project, index) => {
+//     return (
+//       <Col key={project.name} xs="11" sm="6" md="3" lg="2">
+//         <div
+//           onClick={() => {
+//             props.onClick(index);
+//           }}
+//           className="project-card "
+//         >
+//           <img src={project.logo} alt={project.name} />
+//         </div>
+//       </Col>
+//     );
+//   });
 
-const Work = () => {
-  const [isOpen, setisOpen] = useState(false);
+const ProjectsPage = () => {
+  //   const [isOpen, setisOpen] = useState(false);
 
-  const showModal = () => {
-    setisOpen(true);
-  };
-  const hideModal = () => {
-    setisOpen(false);
-  };
-  const [selectedProject, setSelProject] = useState(PROJECT_LIST[0]);
-  const handleOnClick = (index) => {
-    setSelProject(PROJECT_LIST[index]);
-    showModal();
-  };
+  //   const showModal = () => {
+  //     setisOpen(true);
+  //   };
+  //   const hideModal = () => {
+  //     setisOpen(false);
+  //   };
+  //   const [selectedProject, setSelProject] = useState(PROJECT_LIST[0]);
+  //   const handleOnClick = (index) => {
+  //     setSelProject(PROJECT_LIST[index]);
+  //     showModal();
+  //   };
   return (
-    <section className="reveal">
-      <MyModal
+    <section className="">
+      {/* <MyModal
         project={selectedProject}
         shown={isOpen}
         hide={hideModal}
@@ -113,8 +113,8 @@ const Work = () => {
             );
           })}
         </Row>
-      </div>
+      </div> */}
     </section>
   );
 };
-export default Work;
+export default ProjectsPage;

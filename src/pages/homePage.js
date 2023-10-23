@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import "./home.css";
+import "./homePage.css";
 // import NavigationBar from './components/Navigation/NavigationBar';
-import About from "./aboutPage";
+import About from "../components/about";
 import Contact from "./contactPage";
-import Hello from "./hello";
-import Exp from "./exp";
-import Work from "./workPage";
+import Exp from "../components/exp";
+import LatestProject from "../components/latest";
 
 export default function Home() {
   const [play, setPlay] = useState(false);
@@ -21,7 +20,6 @@ export default function Home() {
   };
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
-    console.log(reveals);
 
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
@@ -64,8 +62,8 @@ export default function Home() {
 
       {/* <Hello /> */}
       <About />
+      <LatestProject />
       <Exp />
-      <Work />
       <Contact />
       <footer className="position-relative">
         <div className=" footer">
@@ -102,7 +100,7 @@ export default function Home() {
           </div>
         </div>
         <a onClick={handleClick} href="#top" className="top-btn">
-          <i class="fa-solid fa-hand-point-up"></i>
+          <i className="fa-solid fa-hand-point-up"></i>
         </a>
       </footer>
     </div>
