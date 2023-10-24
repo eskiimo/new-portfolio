@@ -5,53 +5,6 @@
   margin: 0;
 }
 
-.record {
-  display: none;
-  /* z-index: 20;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 3em;
-  height: 3em;
-  margin: 0;
-  border-radius: 50px; */
-}
-
-.record-cover-play {
-  z-index: 1000;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 3em;
-  height: 3em;
-
-  border-radius: 50%;
-  background-image: url("../components/UIelements/record.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation: 60s spin infinite linear;
-}
-.record-cover-pause {
-  z-index: 1000;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 3em;
-  height: 3em;
-  margin: 0;
-
-  border-radius: 50%;
-  background-image: url("../components/UIelements/record.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .top-btn {
   position: absolute;
   bottom: 20px;
