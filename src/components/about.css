@@ -13,6 +13,7 @@
 
 #hero img {
   width: 250px;
+  height: 250px;
   aspect-ratio: 1/1;
   margin: 2em 2em 2em 0;
   object-fit: cover;
@@ -30,7 +31,7 @@
 }
 
 .info-with-color {
-  color: #375174;
+  color: #eb6746;
 }
 .icons {
   display: flex;
@@ -38,7 +39,7 @@
   & a {
     margin: 10px;
     font-size: 2em;
-    color: #375174;
+    color: #eb6746;
   }
   & a:hover {
     color: #00e3b3;

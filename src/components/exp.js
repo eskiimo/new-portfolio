@@ -9,17 +9,17 @@ const Exp = () => {
         <div className="container ">
           <div className="text-box reveal">
             {/* <span className="w"></span> */}
-            <h6>Sep. 2020</h6>
-            <h4>Freelance</h4>
             <h3>Front end Developer</h3>
+            <h4>Freelance</h4>
+            <h6>Sep. 2020</h6>
           </div>
         </div>
         <div className="container">
           <div className="text-box reveal">
             {/* <span className="w"></span> */}
-            <h6>Oct. 2021 - Sep. 2023 </h6>
-            <h4>ISI</h4>
             <h3>Full stack Developer</h3>
+            <h4>ISI</h4>
+            <h6>Oct. 2021 - Sep. 2023 </h6>
           </div>
         </div>
       </div>
