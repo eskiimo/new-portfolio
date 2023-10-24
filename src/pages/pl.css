@@ -13,7 +13,7 @@
   text-overflow: hidden;
   font-weight: 900;
   font-size: 10rem;
-  background-image: url("/assets/pl.jpg");
+  /* background-image: url("/assets/pl.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: text;
