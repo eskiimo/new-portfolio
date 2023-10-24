@@ -20,7 +20,12 @@ const About = () => {
         &gt; Front End Developer<span className="cursor">|</span>
       </h1>
       <div className="cardy">
-        <img src="./assets/me.jpg" alt="kareem kamal" />
+        <img
+          src="./assets/me.jpg"
+          alt="kareem kamal"
+          width={300}
+          height={300}
+        />
         <div className="subtitle">
           <h1> I'm Kareem Kamal</h1>
           <article>

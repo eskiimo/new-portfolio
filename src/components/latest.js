@@ -41,15 +41,30 @@ export default function LatestProject() {
           <h2>stack</h2>
           <div className="stack-icons">
             <div className="stack-icon">
-              <img src="/assets/react.png" alt="nodejs" />
+              <img
+                src="/assets/react.png"
+                alt="nodejs"
+                width={100}
+                height={100}
+              />
               <p>React JS</p>
             </div>
             <div className="stack-icon">
-              <img src="/assets/next.png" alt="nextjs" />
+              <img
+                src="/assets/next.png"
+                alt="nextjs"
+                width={100}
+                height={100}
+              />
               <p>Next JS</p>
             </div>
             <div className="stack-icon">
-              <img src="/assets/node.png" alt="nodejs" />
+              <img
+                src="/assets/node.png"
+                alt="nodejs"
+                width={100}
+                height={100}
+              />
               <p>Node JS</p>
             </div>
             <div className="stack-icon">
