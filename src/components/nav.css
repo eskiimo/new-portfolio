@@ -47,7 +47,7 @@ audio {
   display: none;
 }
 
-.record-cover-play {
+img.record-cover-play {
   z-index: 1000;
   position: absolute;
   top: 10px;
@@ -60,7 +60,7 @@ audio {
   background-repeat: no-repeat;
   animation: 15s spin infinite linear;
 }
-.record-cover-pause {
+img.record-cover-pause {
   z-index: 1000;
   position: absolute;
   top: 10px;
