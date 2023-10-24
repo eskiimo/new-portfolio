@@ -17,7 +17,7 @@ const About = () => {
     <section id="hero" className="">
       <h1 className="dang">
         {" "}
-        &gt; Front End Developer <span className="cursor">|</span>
+        &gt; Front End Developer<span className="cursor">|</span>
       </h1>
       <div className="cardy">
         <img src="./assets/me.jpg" alt="kareem kamal" />

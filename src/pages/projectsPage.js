@@ -71,7 +71,7 @@ const ProjectsPage = () => {
   };
   return (
     <>
-      <section id="project-page" className="">
+      <section id="project-page">
         <h1 className="dang">PROJECTS</h1>
         <hr />
         <div className="cards-row">

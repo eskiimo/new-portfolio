@@ -30,7 +30,9 @@
 .project-desc {
   width: 60%;
 }
-
+.btns {
+  display: flex;
+}
 .stack-icons {
   display: flex;
   flex-direction: row;

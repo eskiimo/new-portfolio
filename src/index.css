@@ -15,7 +15,8 @@ body {
   scroll-behavior: smooth;
   background-color: #242936;
   color: #fff;
-  min-width: 450px;
+  min-width: 400px;
+  position: relative;
 }
 
 code {
