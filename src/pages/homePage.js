@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./homePage.css";
-// import NavigationBar from './components/Navigation/NavigationBar';
 import About from "../components/about";
-import Contact from "./contactPage";
+import Contact from "./contact";
 import Exp from "../components/exp";
 import LatestProject from "../components/latest";
 
@@ -65,44 +64,6 @@ export default function Home() {
       <LatestProject />
       <Exp />
       <Contact />
-      <footer className="position-relative">
-        <div className=" footer">
-          <div className="contact-icon">
-            <a
-              href="//www.linkedin.com/in/kremelhosary/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <i className="fab fa-linkedin"> </i>{" "}
-            </a>
-          </div>
-          <div className="contact-icon">
-            <a
-              href="//github.com/eskiimo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <i className="fab fa-github"> </i>{" "}
-            </a>
-          </div>
-
-          <div className="contact-icon">
-            <a
-              href="//fb.com/kremkamall"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              <i className="fab fa-facebook"> </i>{" "}
-            </a>
-          </div>
-        </div>
-        <a onClick={handleClick} href="#top" className="top-btn">
-          <i className="fa-solid fa-hand-point-up"></i>
-        </a>
-      </footer>
     </div>
   );
 }

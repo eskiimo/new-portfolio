@@ -1,12 +1,12 @@
 import React from "react";
-import "./latest.css";
 import { Link } from "react-router-dom";
+import "./latest.css";
 
 export default function LatestProject() {
   return (
     <section id="latest">
       <div className="kare">
-        <img src="/assets/laptop2.png" alt="laptop" />
+        <img src="/assets/karegram.png" alt="laptop" />
       </div>
       <h1>Latest Project</h1>
       <div className="project-row">

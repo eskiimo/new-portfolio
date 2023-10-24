@@ -1,5 +1,4 @@
 #latest {
-  padding: 5vh 6vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +12,7 @@
 .kare img {
   width: 100%;
   object-fit: contain;
-  margin: 0 auto;
+  margin: 1em auto;
   /* background-image: url("/public/assets/laptop2.png");
   background-repeat: no-repeat; */
 }

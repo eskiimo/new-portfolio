@@ -1,0 +1,72 @@
+#contact {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: start;
+  color: white;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-button {
+  text-align: end;
+  box-sizing: border-box;
+}
+
+.dang-contact h1 {
+  display: inline-block;
+  color: white;
+  font-family: "Righteous", serif;
+  font-size: 5vw;
+  text-shadow: 0.05em 0.04em 0 #00e3b3;
+}
+.dang-contact h1:after {
+  content: "Say Hi!";
+  position: absolute;
+  top: 0.06em;
+  left: 0.06em;
+  z-index: -1;
+  text-shadow: none;
+  background-image: linear-gradient(
+    45deg,
+    transparent 45%,
+    hsla(48, 20%, 90%, 1) 45%,
+    hsla(48, 20%, 90%, 1) 55%,
+    transparent 0
+  );
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shad-anim 15s linear infinite;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+.contact-message {
+  color: white;
+  font-family: "Righteous", serif;
+  font-size: 1.5em;
+  text-shadow: 0.03em 0.03em 0 #00e3b3;
+}
+.spinner-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body p {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+}

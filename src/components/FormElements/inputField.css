@@ -1,30 +1,46 @@
 .form-control {
- border-radius: 0;
- border: 1px solid hsla(230,40%,50%,1);
- background-color: transparent;
- color:white;
+  border-radius: 0;
+  border: 1px solid #00e3b3;
+  background-color: transparent;
+  color: white;
 }
 .error-text {
- text-align: start;
- color:rgb(253, 33, 85);
+  text-align: start;
+  color: #ff0033;
 }
 .form-control__invalid {
- border: 2px solid rgb(253, 33, 85);
- color: rgb(253, 33, 85);
- 
+  border: 1px solid #ff0033;
+  color: #fff;
 }
 .form-control:focus {
- outline: none;
- background-color: transparent;
- border: 2px solid hsla(230,40%,50%,1);
- box-shadow: none;
- color: white;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #ff0033;
+  box-shadow: none;
+  color: white;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px rgb(26, 27, 30) inset !important;
-    -webkit-text-fill-color: white !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(26, 27, 30) inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+form {
+  width: 100%;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #00e3b3;
+  padding: 0.6em;
+  margin: 0.8em 0;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+  font-family: "Courier New", Courier, monospace;
 }

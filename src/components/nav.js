@@ -13,7 +13,9 @@ export default function Nav() {
         </li>
 
         <li className="navlink">
-          <Link to="/projects">Projects</Link>
+          <Link activeClassName="selected" to="/projects">
+            Projects
+          </Link>
         </li>
       </ul>
       {/* <span>

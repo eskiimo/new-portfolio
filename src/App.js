@@ -4,6 +4,8 @@ import Home from "./pages/homePage";
 import ProjectsPage from "./pages/projectsPage";
 import Palestine from "./pages/pl";
 import Nav from "./components/nav";
+
+
 const App = () => {
   return (
     <Router>

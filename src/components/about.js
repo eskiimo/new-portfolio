@@ -25,7 +25,6 @@ const About = () => {
           <h1> I'm Kareem Kamal</h1>
           <article>
             <p className="info-paragraph">
-              I'm a{" "}
               <span className="info-with-color">Full Stack Developer</span>{" "}
               based in Cairo, Egypt. with primary focus on front end
               technologies Specially{" "}
@@ -54,6 +53,23 @@ const About = () => {
             </a>
 
             <a
+              href="https://dev.to/eskiimo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i className="fa-brands fa-dev"></i>
+            </a>
+            <a
+              href="https://www.hackerrank.com/profile/__eskiimo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i className="fa-brands fa-hackerrank"></i>
+            </a>
+
+            <a
               href="//fb.com/kremkamall"
               target="_blank"
               rel="noopener noreferrer"
@@ -61,6 +77,25 @@ const About = () => {
               {" "}
               <i className="fab fa-facebook"> </i>{" "}
             </a>
+
+            <a
+              href="https://www.instagram.com/__eskiimo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.x.com/__eskiimo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i className="fa-brands fa-twitter"></i>
+            </a>
+            <i class="fa-brands fa-x-twitter"></i>
           </div>
         </div>
       </div>

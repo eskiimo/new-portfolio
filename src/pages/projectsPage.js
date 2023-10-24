@@ -1,7 +1,6 @@
 import "./projectsPage.css";
 import React, { useState } from "react";
-// import { Row, Col } from "reactstrap";
-// import MyModal from "../components/UIelements/Modal";
+import MyModal from "../components/UIelements/Modal";
 
 const PROJECT_LIST = [
   {
@@ -55,66 +54,48 @@ const PROJECT_LIST = [
     link: "https://karegram.vercel.app",
   },
 ];
-// export const RenderProjectCards = (props) =>
-//   props.list.map((project, index) => {
-//     return (
-//       <Col key={project.name} xs="11" sm="6" md="3" lg="2">
-//         <div
-//           onClick={() => {
-//             props.onClick(index);
-//           }}
-//           className="project-card "
-//         >
-//           <img src={project.logo} alt={project.name} />
-//         </div>
-//       </Col>
-//     );
-//   });
 
 const ProjectsPage = () => {
-  //   const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setisOpen] = useState(false);
 
-  //   const showModal = () => {
-  //     setisOpen(true);
-  //   };
-  //   const hideModal = () => {
-  //     setisOpen(false);
-  //   };
-  //   const [selectedProject, setSelProject] = useState(PROJECT_LIST[0]);
-  //   const handleOnClick = (index) => {
-  //     setSelProject(PROJECT_LIST[index]);
-  //     showModal();
-  //   };
+  const showModal = () => {
+    setisOpen(true);
+  };
+  const hideModal = () => {
+    setisOpen(false);
+  };
+  const [selectedProject, setSelProject] = useState(PROJECT_LIST[0]);
+  const handleOnClick = (index) => {
+    setSelProject(PROJECT_LIST[index]);
+    showModal();
+  };
   return (
-    <section className="">
-      {/* <MyModal
+    <>
+      <section id="project-page" className="">
+        <h1 className="dang">PROJECTS</h1>
+        <hr />
+        <div className="cards-row">
+          {PROJECT_LIST.map((project, index) => {
+            return (
+              <div
+                onClick={() => {
+                  handleOnClick(index);
+                }}
+                className="project-card "
+              >
+                <img src={project.logo} alt={project.name} />
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <MyModal
         project={selectedProject}
         shown={isOpen}
         hide={hideModal}
         show={showModal}
       />
-
-      <div className="container">
-        <hr />
-        <h2 className="Headings">PROJECTS</h2>
-        <Row className="cards-row">
-          {PROJECT_LIST.map((project, index) => {
-            return (
-              <Col key={project.name} xs="6" md="4" lg="3" className="my-2">
-                <div
-                  onClick={() => {
-                    handleOnClick(index);
-                  }}
-                  className="project-card "
-                >
-                  <img src={project.logo} alt={project.name} />
-                </div>
-              </Col>
-            );
-          })}
-        </Row>
-      </div> */}
-    </section>
+    </>
   );
 };
 export default ProjectsPage;
