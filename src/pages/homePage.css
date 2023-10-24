@@ -4,28 +4,36 @@
   justify-content: flex-end;
   margin: 0;
 }
-/* .music {
-  position: fixed;
-  background-color: aqua;
-  top: 10px;
-  right: 10px;
-  width: 80px;
-} */
 
 .record {
-  z-index: 20;
+  display: none;
+  /* z-index: 20;
   position: absolute;
   top: 10px;
   right: 20px;
   width: 3em;
   height: 3em;
   margin: 0;
-  border-radius: 50px;
+  border-radius: 50px; */
 }
 
 .record-cover-play {
   z-index: 1000;
-  position: fixed;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 3em;
+  height: 3em;
+
+  border-radius: 50%;
+  background-image: url("../components/UIelements/record.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: 60s spin infinite linear;
+}
+.record-cover-pause {
+  z-index: 1000;
+  position: absolute;
   top: 10px;
   right: 20px;
   width: 3em;
@@ -36,60 +44,12 @@
   background-image: url("../components/UIelements/record.png");
   background-size: contain;
   background-repeat: no-repeat;
-  animation: 60s spin infinite linear;
 }
-.record-cover-pause {
-  z-index: 1000;
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  width: 3em;
-  height: 3em;
-  margin: 0;
 
-  border-radius: 50px;
-  background-image: url("../components/UIelements/record.png");
-  background-size: contain;
-}
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
-}
-
-.record-btn {
-  width: 3em;
-  height: 3em;
-  margin: 0;
-  background-color: transparent;
-  border-radius: 50%;
-}
-
-.footer {
-  width: 12vw;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  position: relative;
-}
-.contact-icon i {
-  height: max-content;
-  margin-top: 20px;
-  margin-right: 10px;
-  margin-left: auto;
-  font-size: 30px;
-  color: hsla(230, 40%, 50%, 1);
-}
-.footer .col {
-  height: 25vh;
-  padding: 0px 0px;
-  margin: 0;
-  flex-wrap: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .top-btn {
