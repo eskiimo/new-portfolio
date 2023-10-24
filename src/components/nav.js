@@ -48,10 +48,12 @@ export default function Nav() {
         </li>
       </ul>
 
-      <button
+      <img
+        alt="record"
         onClick={toggleAudio}
         className={`${"record-cover-" + playMode}`}
-      ></button>
+        src="/assets/record.png"
+      ></img>
       {play ? (
         <audio autoPlay controls>
           <source src="/assets/songs/AnyColourYouLike.mp3" type="audio/mpeg" />

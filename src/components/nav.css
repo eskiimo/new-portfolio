@@ -56,7 +56,6 @@ audio {
   height: 3em;
 
   border-radius: 50%;
-  background-image: url("../../public/assets/record.png");
   background-size: contain;
   background-repeat: no-repeat;
   animation: 15s spin infinite linear;
@@ -71,7 +70,6 @@ audio {
   margin: 0;
 
   border-radius: 50%;
-  background-image: url("../../public/assets/record.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
