@@ -31,7 +31,7 @@
 }
 
 .info-with-color {
-  color: #eb6746;
+  color: #e1e1e1;
 }
 .icons {
   display: flex;
@@ -39,7 +39,7 @@
   & a {
     margin: 10px;
     font-size: 2em;
-    color: #eb6746;
+    color: #e1e1e1;
   }
   & a:hover {
     color: #00e3b3;

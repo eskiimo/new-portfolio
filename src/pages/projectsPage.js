@@ -83,7 +83,12 @@ const ProjectsPage = () => {
                 }}
                 className="project-card "
               >
-                <img src={project.logo} alt={project.name} />
+                <img
+                  src={project.logo}
+                  alt={project.name}
+                  height={200}
+                  width={200}
+                />
               </div>
             );
           })}
