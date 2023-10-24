@@ -54,7 +54,6 @@ img.record-cover-play {
   right: 20px;
   width: 3em;
   height: 3em;
-
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;
@@ -68,7 +67,6 @@ img.record-cover-pause {
   width: 3em;
   height: 3em;
   margin: 0;
-
   border-radius: 50%;
   background-size: contain;
   background-repeat: no-repeat;

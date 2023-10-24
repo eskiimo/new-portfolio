@@ -6,7 +6,7 @@ export default function LatestProject() {
   return (
     <section id="latest">
       <div className="kare">
-        <img src="/assets/karegram.png" alt="laptop" />
+        <img src="/assets/laptop2.png" alt="laptop" />
       </div>
       <h1>Latest Project</h1>
       <div className="project-row">
