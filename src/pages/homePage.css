@@ -4,22 +4,21 @@
   justify-content: flex-end;
   margin: 0;
 }
-
-footer {
-  min-height: 60vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* .music {
+  position: fixed;
+  background-color: aqua;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+} */
 
 .record {
   z-index: 20;
   position: absolute;
   top: 10px;
   right: 20px;
-  width: 80px;
-  height: 80px;
+  width: 3em;
+  height: 3em;
   margin: 0;
   border-radius: 50px;
 }
@@ -29,13 +28,14 @@ footer {
   position: fixed;
   top: 10px;
   right: 20px;
-  width: 80px;
-  height: 80px;
+  width: 3em;
+  height: 3em;
   margin: 0;
 
-  border-radius: 50px;
+  border-radius: 50%;
   background-image: url("../components/UIelements/record.png");
   background-size: contain;
+  background-repeat: no-repeat;
   animation: 60s spin infinite linear;
 }
 .record-cover-pause {
@@ -43,8 +43,8 @@ footer {
   position: fixed;
   top: 10px;
   right: 20px;
-  width: 80px;
-  height: 80px;
+  width: 3em;
+  height: 3em;
   margin: 0;
 
   border-radius: 50px;
@@ -58,11 +58,11 @@ footer {
 }
 
 .record-btn {
-  width: 80px;
-  height: 80px;
+  width: 3em;
+  height: 3em;
   margin: 0;
   background-color: transparent;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .footer {

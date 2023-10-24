@@ -47,17 +47,22 @@ export default function Home() {
   // };
   return (
     <div className="sections-container">
-      <div className={`${"record-cover-" + playMode}`}>
-        <button onClick={toggleAudio} className="record-btn"></button>
-      </div>
+      <div className="music">
+        <div className={`${"record-cover-" + playMode}`}>
+          <button onClick={toggleAudio} className="record-btn"></button>
+        </div>
 
-      {play ? (
-        <audio autoPlay controls className="record spin">
-          <source src="/assets/songs/AnyColourYouLike.mp3" type="audio/mpeg" />
-        </audio>
-      ) : (
-        <></>
-      )}
+        {play ? (
+          <audio autoPlay controls className="record spin">
+            <source
+              src="/assets/songs/AnyColourYouLike.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        ) : (
+          <></>
+        )}
+      </div>
 
       {/* <Hello /> */}
       <About />
