@@ -35,16 +35,16 @@ export default function Home() {
 
   window.addEventListener("scroll", reveal);
 
-  const handleClick = () => {
-    const id = `top`;
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
+  // const handleClick = () => {
+  //   const id = `top`;
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({
+  //       behavior: "smooth",
+  //       block: "start",
+  //     });
+  //   }
+  // };
   return (
     <div className="sections-container">
       <div className={`${"record-cover-" + playMode}`}>
