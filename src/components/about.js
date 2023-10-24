@@ -61,6 +61,14 @@ const About = () => {
               <i className="fa-brands fa-dev"></i>
             </a>
             <a
+              href="https://stackoverflow.com/users/9022803/kareem-kamal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i class="fa-brands fa-stack-overflow"></i>
+            </a>
+            <a
               href="https://www.hackerrank.com/profile/__eskiimo"
               target="_blank"
               rel="noopener noreferrer"
