@@ -71,7 +71,7 @@ const About = () => {
               rel="noopener noreferrer"
             >
               {" "}
-              <i class="fa-brands fa-stack-overflow"></i>
+              <i className="fa-brands fa-stack-overflow"></i>
             </a>
             <a
               href="https://www.hackerrank.com/profile/__eskiimo"
@@ -108,7 +108,7 @@ const About = () => {
               {" "}
               <i className="fa-brands fa-twitter"></i>
             </a>
-            <i class="fa-brands fa-x-twitter"></i>
+            <i className="fa-brands fa-x-twitter"></i>
           </div>
         </div>
       </div>

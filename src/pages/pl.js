@@ -1,7 +1,7 @@
 import React from "react";
 import "./pl.css";
 
-export default function Palestine() {
+const Palestine = () => {
   // const [text, setText] = useState("FREE PALESTINE");
   // const change = () => {
   //   setText(text + " FREE PALESTINE");
@@ -25,4 +25,6 @@ export default function Palestine() {
       </h1>
     </div>
   );
-}
+};
+
+export default Palestine;

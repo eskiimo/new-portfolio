@@ -39,7 +39,7 @@ const Exp = () => {
           </div>
           <div className="dang-skills">
             <h1>
-              Backend <i class="fa-brands fa-node-js"></i>
+              Backend <i className="fa-brands fa-node-js"></i>
             </h1>
             <hr />
 

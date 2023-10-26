@@ -6,7 +6,13 @@ export default function LatestProject() {
   return (
     <section id="latest">
       <div className="kare">
-        <img src="/assets/laptop2.png" alt="laptop" height={250} width={250} />
+        <img
+          loading="lazy"
+          src="/assets/laptop2.png"
+          alt="laptop"
+          height={250}
+          width={250}
+        />
       </div>
       <h1>Latest Project</h1>
       <div className="project-row">
@@ -42,6 +48,7 @@ export default function LatestProject() {
           <div className="stack-icons">
             <div className="stack-icon">
               <img
+                loading="lazy"
                 src="/assets/react.png"
                 alt="nodejs"
                 width={100}
@@ -51,6 +58,7 @@ export default function LatestProject() {
             </div>
             <div className="stack-icon">
               <img
+                loading="lazy"
                 src="/assets/next.png"
                 alt="nextjs"
                 width={100}
@@ -60,6 +68,7 @@ export default function LatestProject() {
             </div>
             <div className="stack-icon">
               <img
+                loading="lazy"
                 src="/assets/node.png"
                 alt="nodejs"
                 width={100}

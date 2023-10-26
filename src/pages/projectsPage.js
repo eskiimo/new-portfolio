@@ -85,6 +85,7 @@ const ProjectsPage = () => {
                 className="project-card "
               >
                 <img
+                  loading="lazy"
                   src={project.logo}
                   alt={project.name}
                   height={200}
