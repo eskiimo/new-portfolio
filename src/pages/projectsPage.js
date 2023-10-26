@@ -78,6 +78,7 @@ const ProjectsPage = () => {
           {PROJECT_LIST.map((project, index) => {
             return (
               <div
+                key={index}
                 onClick={() => {
                   handleOnClick(index);
                 }}

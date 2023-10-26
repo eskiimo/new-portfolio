@@ -38,13 +38,11 @@ export default function Nav() {
           <Link to="/">/</Link>
         </li>
         <li className="navlink">
-          <Link to="/">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </li>
 
         <li className="navlink">
-          <Link activeClassName="selected" to="/projects">
-            Projects
-          </Link>
+          <Link to="/projects">Projects</Link>
         </li>
       </ul>
 
