@@ -18,9 +18,6 @@ export default function Home() {
   // };
   return (
     <div className="sections-container">
-      {/* <div className={`${"record-cover-" + playMode}`}> */}
-
-      {/* <Hello /> */}
       <About />
       <LatestProject />
       <Exp />

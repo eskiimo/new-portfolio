@@ -16,13 +16,16 @@ const BlogPage = () => {
         setIsloading(false);
       });
     setIsloading(false);
+    console.log(blogs);
   };
   useEffect(() => {
     getBlogs();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <section id="blog">
+      <h1 className="dang"> Blogs</h1>
       {isLoading ? (
         <LoadingSpinner />
       ) : (
@@ -30,9 +33,10 @@ const BlogPage = () => {
           {blogs.map((article) => (
             <li key={article.id}>
               <h3>{article.title}</h3>
-              <p>{article.description}</p>
+              <h5>{article.description}</h5>
+              <p>{article.reading_time_minutes} mins reading</p>
               <a href={article.url} target="_blank" rel="noopener noreferrer">
-                SEE MORE <i className="fa-solid fa-up-right-from-square"></i>
+                Read <i className="fa-solid fa-up-right-from-square"></i>
               </a>
             </li>
           ))}

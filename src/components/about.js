@@ -29,14 +29,14 @@ const About = () => {
         <div className="subtitle">
           <h1> I'm Kareem Kamal</h1>
           <article>
-            <p className="info-paragraph">
+            <h5 className="info-paragraph">
               <span className="info-with-color">Full Stack Developer</span>{" "}
               based in Cairo, Egypt. with primary focus on front end
               technologies Specially{" "}
               <span className="info-with-color">REACT</span> &{" "}
               <span className="info-with-color">NEXT</span>
               <br /> I love Building pretty websites, memes, music
-            </p>
+            </h5>
           </article>
           <div className="icons">
             <a

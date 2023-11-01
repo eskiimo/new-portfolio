@@ -24,8 +24,7 @@ code {
     monospace;
 }
 section {
-  margin: 10vh 0;
-  padding: 5vh 20vw;
+  padding: 5vh 10vw;
 }
 @media (max-width: 750px) {
   section {

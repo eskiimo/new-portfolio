@@ -23,7 +23,7 @@ const Exp = () => {
           </div>
         </div>
       </div>
-      <div className="skills-container">
+      {/* <div className="skills-container">
         <div className="skills row">
           <div className="dang-skills">
             <h1>
@@ -49,7 +49,7 @@ const Exp = () => {
             <p className="skills-paragraph">Graphql</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
