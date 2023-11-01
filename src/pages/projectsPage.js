@@ -58,35 +58,33 @@ const ProjectsPage = () => {
         <h1 className="dang">PROJECTS</h1>
         {/* <hr /> */}
         <div className="cards-row">
-          {PROJECT_LIST.map((project, index) => {
-            return (
-              <div key={index} className="project-card ">
-                <div className="project-img">
-                  <img loading="lazy" src={project.image} alt={project.name} />
-                </div>
-                <div className="project-desc">
-                  <>
-                    <h1>{project.name}</h1>
-                    <p>{project.desc}</p>
-                    <div className="project-stack">
-                      {project.stack.map((tech) => (
-                        <p key={tech}>{tech}</p>
-                      ))}
-                    </div>
-                  </>
-                  <a
-                    href={project.link}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="btn-solid"
-                  >
-                    {" "}
-                    View Demo
-                  </a>
-                </div>
+          {PROJECT_LIST.map((project, index) => (
+            <div key={index} className="project-card ">
+              <div className="project-img">
+                <img loading="lazy" src={project.image} alt={project.name} />
               </div>
-            );
-          })}
+              <div className="project-descr">
+                <>
+                  <h1>{project.name}</h1>
+                  <p>{project.desc}</p>
+                  <div className="project-stack">
+                    {project.stack.map((tech) => (
+                      <p key={tech}>{tech}</p>
+                    ))}
+                  </div>
+                </>
+                <a
+                  href={project.link}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="btn-solid"
+                >
+                  {" "}
+                  View Demo
+                </a>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       {/* <MyModal
