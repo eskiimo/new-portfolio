@@ -3,6 +3,13 @@ import React from "react";
 
 const PROJECT_LIST = [
   {
+    name: "Next-commerce",
+    image: "/assets/next-commerce.png",
+    desc: "E-Commerce Website with Next.js 14 and Sanity.io",
+    link: "https://next-commerce-kareem.vercel.app/",
+    stack: ["Next.js", "Tailwind", "TypeScript", "Sanity"],
+  },
+  {
     name: "Places",
     image: "/assets/acad-mern.jpg",
     desc: "Full stack web application coded along with -The MERN Fullstack Guide course-  Created by Academind by Maximilian Schwarzmüller, Manuel Lorenz",
