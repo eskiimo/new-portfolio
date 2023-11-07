@@ -1,0 +1,34 @@
+.badge {
+  color: #e1e1e1;
+  background-color: black;
+  padding: 0.4em 1em;
+  margin: 0 1em 1em 0;
+  font-size: 1em;
+  border-radius: 30px;
+}
+.React,
+.TypeScript {
+  background-color: #0399c7;
+}
+.NodeJS {
+  background-color: #509d41;
+}
+.MongoDB {
+  color: #08ee69;
+  background-color: #082532;
+}
+.CSS {
+  background-color: #2862e9;
+}
+.Bootstrap {
+  background-color: #8713f2;
+}
+
+.TailwindCSS {
+  background-color: #38bdf8;
+}
+
+.Express {
+  color: #e1e1e1;
+  background-color: black;
+}

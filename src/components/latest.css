@@ -4,61 +4,11 @@
   justify-content: center;
   align-items: center;
 }
-.kare {
-  height: 400px;
-  margin: 0 auto;
-  display: flex;
-}
-.kare img {
-  width: 100%;
-  object-fit: contain;
-  margin: 1em auto;
-  /* background-image: url("/public/assets/laptop2.png");
-  background-repeat: no-repeat; */
-}
-
-.project-row {
-  display: flex;
-  flex-direction: column;
-  & > div {
-    margin: 1em;
-  }
-  & h2 {
-    color: #00e3b3;
-  }
-}
-.project-desc {
-  width: 60%;
-}
-.btns {
-  display: flex;
-}
-.stack-icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.stack-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-  & img {
-    width: 2em;
-    height: 2em;
-    object-fit: contain;
-  }
-}
 
 .btn-solid {
   background-color: #00e3b3;
   color: #375174;
   padding: 0.5em 1em;
-  margin-right: 1em;
   text-decoration: none;
 }
 .btn-outline {
@@ -66,10 +16,6 @@
   border: 1px solid #00e3b3;
   color: #00e3b3;
   padding: 0.5em 1em;
-}
-
-.m {
-  margin-top: 5em;
 }
 
 @media (min-width: 750px) {

@@ -1,13 +1,14 @@
+import ProjectCard from "../components/projectCard";
 import "./projectsPage.css";
 import React from "react";
 
-const PROJECT_LIST = [
+export const PROJECT_LIST = [
   {
     name: "Next-commerce",
     image: "/assets/next-commerce.png",
     desc: "E-Commerce Website with Next.js 14 and Sanity.io",
     link: "https://next-commerce-kareem.vercel.app/",
-    stack: ["Next.js", "Tailwind", "TypeScript", "Sanity"],
+    stack: ["Next.js", "TailwindCSS", "TypeScript", "Sanity"],
   },
   {
     name: "Places",
@@ -29,7 +30,7 @@ const PROJECT_LIST = [
     image: "/assets/egycon-1.PNG",
     desc: "Collaboration project - created the entire frontend with css and bootstrap as per client's designing needs",
     link: "https://egycongroup.com/",
-    stack: ["CSS", "BOOTSTRAP"],
+    stack: ["CSS", "Bootstrap"],
   },
   {
     logo: "/assets/dalya-logo.png",
@@ -37,7 +38,7 @@ const PROJECT_LIST = [
     image: "/assets/dalya-1.PNG",
     desc: " Art Gallery for showcasing paintings and interior design Built with Gatsby.js SSR styled with css and bootstrap",
     link: "https://Dalyart.netlify.app",
-    stack: ["React", "Gatsby", "bootstrap"],
+    stack: ["React", "Gatsby", "Bootstrap"],
   },
   {
     name: "KareGram",
@@ -65,41 +66,11 @@ const ProjectsPage = () => {
         <h1 className="dang">PROJECTS</h1>
         {/* <hr /> */}
         <div className="cards-row">
-          {PROJECT_LIST.map((project, index) => (
-            <div key={index} className="project-card ">
-              <div className="project-img">
-                <img loading="lazy" src={project.image} alt={project.name} />
-              </div>
-              <div className="project-descr">
-                <>
-                  <h1>{project.name}</h1>
-                  <p>{project.desc}</p>
-                  <div className="project-stack">
-                    {project.stack.map((tech) => (
-                      <p key={tech}>{tech}</p>
-                    ))}
-                  </div>
-                </>
-                <a
-                  href={project.link}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="btn-solid"
-                >
-                  {" "}
-                  View Demo
-                </a>
-              </div>
-            </div>
+          {PROJECT_LIST.map((project, idx) => (
+            <ProjectCard key={idx} project={project} />
           ))}
         </div>
       </section>
-      {/* <MyModal
-        project={selectedProject}
-        shown={isOpen}
-        hide={hideModal}
-        show={showModal}
-      /> */}
     </>
   );
 };

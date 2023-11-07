@@ -5,10 +5,10 @@
   flex-direction: column;
   & .dang {
     align-self: start;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 }
-#blog h3,
+#blog h2,
 a {
   color: #00e3b3;
 }

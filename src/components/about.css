@@ -29,6 +29,9 @@
 .subtitle {
   margin-left: 2em;
 }
+.subtitle h3 {
+  font-size: x-large;
+}
 
 .info-with-color {
   color: #e1e1e1;

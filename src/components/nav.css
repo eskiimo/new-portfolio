@@ -32,6 +32,7 @@ nav {
 
 .navlink {
   margin-left: 2rem;
+  font-size: 1.4em;
   & a {
     white-space: nowrap;
     text-decoration: none;

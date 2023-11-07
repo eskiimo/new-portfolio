@@ -1,0 +1,33 @@
+.project-card {
+  max-width: 500px;
+  padding: 2em;
+  text-align: center;
+}
+.project-info {
+  padding: 1em;
+}
+.project-header {
+  margin: 0.2em;
+}
+
+.project-card img {
+  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.project-description {
+  font-size: 1.2em;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.project-card a {
+  margin: 10px auto;
+  font-size: 1.3em;
+}

@@ -32,8 +32,8 @@ const BlogPage = () => {
         <ul>
           {blogs.map((article) => (
             <li key={article.id}>
-              <h3>{article.title}</h3>
-              <h5>{article.description}</h5>
+              <h2>{article.title}</h2>
+              <h3>{article.description}</h3>
               <p>{article.reading_time_minutes} mins reading</p>
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read <i className="fa-solid fa-up-right-from-square"></i>
