@@ -16,15 +16,37 @@ function ProjectCard({ project }) {
           ))}
         </div>
 
-        <a
-          href={project.link}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn-solid"
-        >
-          {" "}
-          View Live
-        </a>
+        {project.link && (
+          <a
+            href={project?.link}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="btn-solid"
+          >
+            Demo
+          </a>
+        )}
+
+        {project.googleLink && (
+          <a
+            href={project?.googleLink}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <i className="fa-brands fa-android"></i>
+          </a>
+        )}
+        {project.appleLink && (
+          <a href={project.appleLink} rel="noopener noreferrer" target="_blank">
+            <i className="fa-brands fa-apple"></i>
+          </a>
+        )}
+
+        {project.repo && (
+          <a href={project.repo} rel="noopener noreferrer" target="_blank">
+            <i className="fab fa-github"> </i>{" "}
+          </a>
+        )}
       </div>
     </div>
   );

@@ -28,6 +28,9 @@
 }
 
 .project-card a {
-  margin: 10px auto;
+  margin: 10px;
   font-size: 1.3em;
+  border: 1px solid #00e3b3;
+  padding: 0.3em 1em;
+  color: aliceblue;
 }

@@ -4,6 +4,7 @@
   padding: 0.4em 1em;
   margin: 0 1em 1em 0;
   font-size: 1em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   border-radius: 30px;
 }
 .React,
@@ -25,7 +26,7 @@
 }
 
 .TailwindCSS {
-  background-color: #38bdf8;
+  background-color: #2a98c7;
 }
 
 .Express {

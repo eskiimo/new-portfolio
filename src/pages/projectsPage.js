@@ -11,13 +11,6 @@ export const PROJECT_LIST = [
     stack: ["Next.js", "TailwindCSS", "TypeScript", "Sanity"],
   },
   {
-    name: "Places",
-    image: "/assets/acad-mern.jpg",
-    desc: "Full stack web application coded along with -The MERN Fullstack Guide course-  Created by Academind by Maximilian Schwarzmüller, Manuel Lorenz",
-    link: "https://acad-mern-kareem.netlify.app/",
-    stack: ["React", "NodeJS", "Express", "MongoDB"],
-  },
-  {
     name: "EPS",
     image: "/assets/epsHome.png",
     desc: 'website for an electric services company "EPS" ',
@@ -26,19 +19,10 @@ export const PROJECT_LIST = [
   },
   {
     name: "EgyCon",
-    // image: "/assets/egycon-logo.png",
     image: "/assets/egycon-1.PNG",
     desc: "Collaboration project - created the entire frontend with css and bootstrap as per client's designing needs",
     link: "https://egycongroup.com/",
     stack: ["CSS", "Bootstrap"],
-  },
-  {
-    logo: "/assets/dalya-logo.png",
-    name: "DalyArt",
-    image: "/assets/dalya-1.PNG",
-    desc: " Art Gallery for showcasing paintings and interior design Built with Gatsby.js SSR styled with css and bootstrap",
-    link: "https://Dalyart.netlify.app",
-    stack: ["React", "Gatsby", "Bootstrap"],
   },
   {
     name: "KareGram",
@@ -49,8 +33,22 @@ export const PROJECT_LIST = [
     stack: ["React", "NextJS", "TailwindCSS", "Express", "MongoDB"],
   },
   {
+    name: "Places",
+    image: "/assets/acad-mern.jpg",
+    desc: "Full stack web application coded along with -The MERN Fullstack Guide course-  Created by Academind by Maximilian Schwarzmüller, Manuel Lorenz",
+    link: "https://acad-mern-kareem.netlify.app/",
+    stack: ["React", "NodeJS", "Express", "MongoDB"],
+  },
+  {
+    image: "/assets/linkedout.png",
+    name: "LinkedOut",
+    desc: "Simple mobile app for finding jobs from Rapid API ",
+    repo: "https://github.com/eskiimo/linked-out",
+    stack: ["React Native", "Expo", "Rapid-API"],
+  },
+  {
     name: "Harth - حارث ",
-    image: "/assets/harth-1.jpg",
+    image: "/assets/harth.png",
     desc: "Built the Front End with Flutter. Available on Google Play Store and Apple Store",
     googleLink: "https://play.google.com/store/apps/details?id=com.harth.store",
     appleLink:
