@@ -34,16 +34,3 @@ section {
 li {
   list-style: none;
 }
-input {
-  background-color: transparent;
-}
-.html-snippets {
-  color: rgb(70, 70, 70);
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  font-family: "Corinthia", cursive;
-}
-
-.hide {
-  display: none;
-}

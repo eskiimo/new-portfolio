@@ -6,7 +6,8 @@
 }
 .error-text {
   text-align: start;
-  color: #ff0033;
+  margin-top: 0;
+  color: red;
 }
 .form-control__invalid {
   border: 1px solid #ff0033;

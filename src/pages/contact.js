@@ -70,8 +70,7 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact" className="reveal">
-        {/* < className="contact-container"> */}
+      <section id="contact" className="">
         <p className="opening-tag html-snippets">&lt;html &gt;</p>
         <p className="html-snippets"> &lt;body &gt;</p>
         <p className="html-snippets">&lt;h1 &gt;</p>
@@ -81,22 +80,24 @@ const Contact = () => {
         </div>
         <p className="html-snippets"> &lt;p &gt;</p>
         <p className="contact-message">
-          if you have a request or a question, don't hesitate to use the form.
+          I would love to hear from you regarding anything related to what's
+          posted on this website. if you have a request or a question, don't
+          hesitate to use the form.
           <br />
           or simply visit my fb page <i className="fa-solid fa-hand-peace"></i>
         </p>
         <p className="html-snippets"> &lt;form &gt;</p>
         <form autoComplete="off" className="form" onSubmit={onSubmitHandler}>
-          {/* <Transition bool={bool}> */}
-          <CustomInput
-            id="name"
-            placeholder="Name"
-            type="text"
-            errorText="name cannot be blank!!"
-            validators={[VALIDATOR_REQUIRE()]}
-            onInput={inputHandler}
-          />
-          {/* </Transition> */}
+          <Transition bool={bool}>
+            <CustomInput
+              id="name"
+              placeholder="Name"
+              type="text"
+              errorText="anonymos guy huh!"
+              validators={[VALIDATOR_REQUIRE()]}
+              onInput={inputHandler}
+            />
+          </Transition>
           <Transition bool={bool}>
             <CustomInput
               id="email"

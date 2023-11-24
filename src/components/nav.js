@@ -40,6 +40,9 @@ export default function Nav() {
           <li className="navlink">
             <Link to="/projects">Projects</Link>
           </li>
+          <li className="navlink">
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
     </>
