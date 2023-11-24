@@ -1,16 +1,22 @@
 import React, { useEffect } from "react";
 import "./about.css";
-// import { useLocation } from "react-router-dom";
 
 const About = () => {
-  // const page = useLocation();
-
   useEffect(() => {
     const tog = setInterval(() => {
       let cursor = document.getElementsByClassName("cursor");
       cursor[0]?.classList.toggle("hide");
     }, 500);
+
     return () => clearInterval(tog);
+  }, []);
+
+  useEffect(() => {
+    const togImage = setInterval(() => {
+      let rand = Math.floor(Math.random() * 4 + 1);
+      document.getElementById("propic").src = `./assets/me-${rand}.jpg`;
+    }, 3000);
+    return () => clearInterval(togImage);
   }, []);
 
   return (
@@ -19,7 +25,13 @@ const About = () => {
         &gt; Software Developer<span className="cursor ">|</span>
       </h1>
 
-      <img src="./assets/me.jpg" alt="kareem kamal" width={300} height={300} />
+      <img
+        id="propic"
+        src="./assets/me-1.jpg"
+        alt="kareem kamal"
+        width={300}
+        height={300}
+      />
       <h1 className="name">Kareem Kamal</h1>
       <div className="icons">
         <a
