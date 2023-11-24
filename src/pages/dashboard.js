@@ -7,11 +7,11 @@ const DashBoard = () => {
   const [messages, setMessages] = useState([]);
   const [verified, setVerified] = useState(false);
   const verifyRef = useRef();
-  const SUPERPASSWORD = "kareem";
 
   const handle = (e) => {
     e.preventDefault();
-    if (verifyRef.current.value === SUPERPASSWORD) {
+
+    if (verifyRef.current.value === process.env.REACT_APP_SUPERPASSWORD) {
       setVerified(true);
       getMessages();
     }
