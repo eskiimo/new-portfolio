@@ -54,9 +54,14 @@ const DashBoard = () => {
         </>
       ) : (
         <form onSubmit={handle}>
-          <input type="password" placeholder="Verify!" ref={verifyRef} />
+          <input
+            autoComplete="false"
+            type="password"
+            placeholder="Password!"
+            ref={verifyRef}
+          />
           <button className="buton" type="submit">
-            Verify
+            VERIFY
           </button>
         </form>
       )}

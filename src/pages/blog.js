@@ -16,7 +16,6 @@ const BlogPage = () => {
         setIsloading(false);
       });
     setIsloading(false);
-    console.log(blogs);
   };
   useEffect(() => {
     getBlogs();
