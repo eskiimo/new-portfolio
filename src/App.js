@@ -9,6 +9,7 @@ import LoadingSpinner from "./components/UIelements/LoadingSpinner";
 const LazyProjects = lazy(() => import("./pages/projectsPage"));
 const LazyBlog = lazy(() => import("./pages/blog"));
 const LazyContact = lazy(() => import("./pages/contact"));
+const LazyDash = lazy(() => import("./pages/dashboard"));
 
 const App = () => {
   return (
@@ -38,6 +39,14 @@ const App = () => {
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <LazyContact />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <LazyDash />
             </Suspense>
           }
         />

@@ -26,11 +26,11 @@ const BlogPage = () => {
   return (
     <section id="blog">
       <h1 className="dang"> Blogs</h1>
-      {isLoading ? (
-        <LoadingSpinner />
-      ) : (
-        <ul>
-          {blogs.map((article) => (
+      <ul>
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          blogs.map((article) => (
             <li key={article.id}>
               <h2>{article.title}</h2>
               <h3>{article.description}</h3>
@@ -39,9 +39,9 @@ const BlogPage = () => {
                 Read <i className="fa-solid fa-up-right-from-square"></i>
               </a>
             </li>
-          ))}
-        </ul>
-      )}
+          ))
+        )}
+      </ul>
     </section>
   );
 };

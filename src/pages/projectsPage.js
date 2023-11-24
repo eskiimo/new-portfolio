@@ -62,7 +62,6 @@ const ProjectsPage = () => {
     <>
       <section id="project-page">
         <h1 className="dang">PROJECTS</h1>
-        {/* <hr /> */}
         <div className="cards-row">
           {PROJECT_LIST.map((project, idx) => (
             <ProjectCard key={idx} project={project} />
