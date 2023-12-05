@@ -4,6 +4,13 @@ import React from "react";
 
 export const PROJECT_LIST = [
   {
+    name: "XD Bash",
+    image: "/assets/bash.png",
+    desc: "Dummy bash shell clone",
+    link: "https://kbash.netlify.app",
+    stack: ["JavaScript", "HTML", "CSS"],
+  },
+  {
     name: "Next-commerce",
     image: "/assets/next-commerce.png",
     desc: "E-Commerce Website with Next.js 14 and Sanity.io",
