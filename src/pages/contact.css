@@ -10,11 +10,13 @@
 input {
   background-color: transparent;
 }
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=Whisper&display=swap");
 .html-snippets {
   color: rgb(70, 70, 70);
-  font-size: 1rem;
-  margin-bottom: 0;
-  font-family: "Corinthia", cursive;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-family: "Whisper", cursive;
 }
 
 .form {
@@ -26,11 +28,11 @@ input {
   box-sizing: border-box;
 }
 
-.dang-contact h1 {
+#contact h1 {
   display: inline-block;
   color: white;
   font-family: "Righteous", serif;
-  font-size: 5vw;
+  font-size: 50px;
   /* text-shadow: 0.05em 0.04em 0 #00e3b3; */
 }
 

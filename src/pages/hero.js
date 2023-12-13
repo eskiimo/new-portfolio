@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
-import "./about.css";
+import "./hero.css";
+// import About from "../components/about";
+// import Contact from "./contact";
+// import Exp from "../components/exp";
+// import LatestProject from "../components/latest";
 
-const About = () => {
+export default function Home() {
   useEffect(() => {
     const tog = setInterval(() => {
       let cursor = document.getElementsByClassName("cursor");
@@ -21,7 +25,7 @@ const About = () => {
 
   return (
     <section id="hero">
-      <h1 className="dang">
+      <h1>
         &gt; Software Developer<span className="cursor ">|</span>
       </h1>
 
@@ -32,7 +36,7 @@ const About = () => {
         width={300}
         height={300}
       />
-      <h1 className="name">Kareem Kamal</h1>
+      <h2 className="name">Kareem Kamal</h2>
       <div className="icons">
         <a
           href="//www.linkedin.com/in/kremelhosary/"
@@ -101,16 +105,17 @@ const About = () => {
         </a>
         <i className="fa-brands fa-x-twitter"></i>
       </div>
-      <article className="subtitle">
-        <h3>
-          <span className="info-with-color">Full Stack Developer</span> based in
-          Cairo, Egypt. with primary focus on front end technologies Specially{" "}
-          <span className="info-with-color">REACT</span> &{" "}
-          <span className="info-with-color">NEXT</span>
+      <article>
+        <p className="subtitle">
+          Full Stack Developer specialized in{" "}
+          <span className="info-with-color">MERN</span>stack . JavaScript
+          enthusiast creating friendly user interfaces, enhancing web
+          performance and SEO, Exploring different frameworks like{" "}
+          <span className="info-with-color">NEXT</span> and{" "}
+          <span className="info-with-color">ANGULAR</span> and more.
           <br /> I love Building websites, memes, music
-        </h3>
+        </p>
       </article>
     </section>
   );
-};
-export default About;
+}

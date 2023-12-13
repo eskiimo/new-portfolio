@@ -20,23 +20,21 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1.5em 16vw;
 }
 .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 0;
 }
 
 .navlink {
   margin-left: 2rem;
-  font-size: 1.4em;
+  font-size: 16px;
   & a {
     white-space: nowrap;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 200;
     color: #00e3b3;
   }
   & a:hover {

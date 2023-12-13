@@ -1,8 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/homePage";
-// import ProjectsPage from "./pages/projectsPage";
-// import BlogPage from "./pages/blog";
+import Home from "./pages/hero";
 import Nav from "./components/nav";
 import LoadingSpinner from "./components/UIelements/LoadingSpinner";
 

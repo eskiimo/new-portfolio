@@ -10,7 +10,7 @@ const DashBoard = () => {
 
   const handle = (e) => {
     e.preventDefault();
-
+    console.log(process.env.REACT_APP_SUPERPASSWORD);
     if (verifyRef.current.value === process.env.REACT_APP_SUPERPASSWORD) {
       setVerified(true);
       getMessages();

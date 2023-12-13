@@ -3,7 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5vh 20vw;
+  & h1 {
+    text-align: center;
+    font-size: 30px;
+  }
 }
 
 .hide {
@@ -11,23 +14,19 @@
 }
 
 #hero img {
-  width: 250px;
-  height: 250px;
-  aspect-ratio: 1/1;
+  width: 230px;
+  height: 230px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #00e3b3;
+  /* border: 1px solid #00e3b3; */
 }
 .name {
   color: #00e3b3;
+  font-weight: 500;
 }
 .subtitle {
   margin-left: 2em;
   max-width: 700px;
-}
-.subtitle h3 {
-  font-size: 1.5em;
-  font-weight: 500;
 }
 
 .info-with-color {

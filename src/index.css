@@ -22,11 +22,10 @@ code {
     monospace;
 }
 section {
-  padding: 5vh 10vw;
+  padding: 5vh 5vw;
 }
 @media (max-width: 750px) {
   section {
-    margin: 10vh 0;
     padding: 5vh 5vw;
   }
 }
