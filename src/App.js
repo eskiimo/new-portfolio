@@ -1,45 +1,17 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/hero";
-import Nav from "./components/nav";
-import LoadingSpinner from "./components/UIelements/LoadingSpinner";
 
-const LazyProjects = lazy(() => import("./pages/projectsPage"));
-const LazyBlog = lazy(() => import("./pages/blog"));
-const LazyContact = lazy(() => import("./pages/contact"));
+import LoadingSpinner from "./components/UIelements/LoadingSpinner";
+import "./App.css";
+import Main from "./pages/main";
+
 const LazyDash = lazy(() => import("./pages/dashboard"));
 
 const App = () => {
   return (
-    <Router>
-      <Nav />
-
+    <Router className="">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/blog"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyBlog />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/projects"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyProjects />
-            </Suspense>
-          }
-        />
-        <Route
-          path="/contact"
-          element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <LazyContact />
-            </Suspense>
-          }
-        />
+        <Route path="/" element={<Main />} />
         <Route
           path="/dashboard"
           element={

@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./nav.css";
-export default function Nav() {
+
+export default function Nav(props) {
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
@@ -19,9 +19,14 @@ export default function Nav() {
   }
 
   window.addEventListener("scroll", reveal);
-
+  const links = [
+    { link: "/", index: 0 },
+    { link: "Blog", index: 1 },
+    { link: "Projects", index: 2 },
+    { link: "Contact", index: 3 },
+  ];
   return (
-    <>
+    <div className="navbar">
       <div className="free">
         {" "}
         <img alt="free palestine" src="/assets/palestine.png" />
@@ -30,21 +35,22 @@ export default function Nav() {
       </div>
       <nav>
         <ul className="nav-links">
-          <li className="navlink">
-            <Link to="/">/</Link>
-          </li>
-          <li className="navlink">
-            <Link to="/blog">Blog</Link>
-          </li>
-
-          <li className="navlink">
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li className="navlink">
-            <Link to="/contact">Contact</Link>
-          </li>
+          {links.map((link) => (
+            <li>
+              <button
+                className={
+                  link.index === props.activeLink ? "active-link " : ""
+                }
+                onClick={() => {
+                  props.swipe(link.index);
+                }}
+              >
+                {link.link}
+              </button>
+            </li>
+          ))}
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
