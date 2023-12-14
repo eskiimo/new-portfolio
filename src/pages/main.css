@@ -1,0 +1,73 @@
+.card-group {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background-size: cover;
+  position: absolute;
+
+  transition: transform 400ms ease;
+}
+
+.card[data-status="unknown"] {
+  transform: scale(0);
+}
+
+.card[data-status="after"] {
+  transform: translateX(50%) scale(0);
+}
+.card[data-status="before"] {
+  transform: translateX(-50%) scale(0);
+  transition: none;
+}
+
+.pattern {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 9%,
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 11vmin 11vmin;
+  height: 100vh;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100%;
+  z-index: 1;
+}
+
+.bg {
+  height: 100%;
+  left: 0px;
+  opacity: 0.15;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease, background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+}
+
+#menu-items {
+  position: relative;
+  z-index: 2;
+}
+#menu-items:hover ~ .pattern {
+  background-size: 10vmin 10vmin;
+  opacity: 0.5;
+}
+#menu-items:hover ~ .bg {
+  background-size: scale(1.2);
+  opacity: 0.1;
+}
+
+.card-group:hover ~ #menu-items {
+  background-color: antiquewhite;
+}

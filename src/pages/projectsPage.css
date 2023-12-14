@@ -1,3 +1,11 @@
+#project-page {
+  height: 100vh;
+  width: 90vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .cards-row {
   margin-top: 2em;
   display: grid;
