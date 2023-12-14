@@ -42,19 +42,6 @@
   z-index: 1;
 }
 
-.bg {
-  height: 100%;
-  left: 0px;
-  opacity: 0.15;
-  position: absolute;
-  top: 0px;
-  transition: opacity 800ms ease, background-size 800ms ease,
-    background-position 800ms ease;
-  width: 100%;
-  z-index: 0;
-  background-size: cover;
-}
-
 #menu-items {
   position: relative;
   z-index: 2;

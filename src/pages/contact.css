@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=Whisper&display=swap");
 #contact {
   display: flex;
   flex-direction: column;
@@ -5,12 +6,12 @@
   justify-content: center;
   text-align: start;
   color: white;
-  padding: 5vh 20vw;
+  width: 100%;
+  margin: auto 5vh;
 }
 input {
   background-color: transparent;
 }
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&family=Whisper&display=swap");
 .html-snippets {
   color: rgb(70, 70, 70);
   font-size: 2rem;
@@ -18,9 +19,13 @@ input {
   font-family: "Space Mono", monospace;
   font-family: "Whisper", cursive;
 }
-
-.form {
+.form-div {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  max-width: 600px;
 }
 
 .form-button {
@@ -41,6 +46,7 @@ input {
   font-family: "Righteous", serif;
   font-size: 1.5em;
   font-weight: 500;
+  max-width: 600px;
   /* text-shadow: 0.03em 0.03em 0 #00e3b3; */
 }
 .spinner-div {
