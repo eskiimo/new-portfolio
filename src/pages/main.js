@@ -5,6 +5,8 @@ import Contact from "./contact";
 import Home from "./hero";
 import Nav from "../components/nav";
 
+import "./main.css";
+
 function Main() {
   const [activeIndex, setActive] = useState(0);
 
@@ -30,8 +32,15 @@ function Main() {
     setActive(index);
   };
   return (
-    <div>
-      <Nav swipe={swipe} activeLink={activeIndex} />
+    <div className="menu">
+      <div id="menu-items">
+        <Nav swipe={swipe} activeLink={activeIndex} />
+      </div>
+      <div className="pattern"></div>
+      <div
+        className="bg"
+        style={{ backgroundImage: "url('/assets/bg.jpg')" }}
+      ></div>
       <div className="card-group">
         <div className="card" data-index={0} data-status="active">
           <Home />

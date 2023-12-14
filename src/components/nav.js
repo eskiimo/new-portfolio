@@ -36,7 +36,7 @@ export default function Nav(props) {
       <nav>
         <ul className="nav-links">
           {links.map((link) => (
-            <li>
+            <li key={link.index}>
               <button
                 className={
                   link.index === props.activeLink ? "active-link " : ""

@@ -9,7 +9,7 @@ const LazyDash = lazy(() => import("./pages/dashboard"));
 
 const App = () => {
   return (
-    <Router className="">
+    <Router className="menu">
       <Routes>
         <Route path="/" element={<Main />} />
         <Route
