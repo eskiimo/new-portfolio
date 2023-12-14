@@ -72,57 +72,62 @@ const Contact = () => {
 
         <h1>CONTACT ME!</h1>
         <p className="html-snippets"> &lt;p &gt;</p>
-        <p className="contact-message">
-          I would love to hear from you regarding anything related to what's
-          posted on this website. if you have a request or a question, don't
-          hesitate to use the form.
-          <br />
-          or simply visit my fb page <i className="fa-solid fa-hand-peace"></i>
-        </p>
+        <div className="form-div">
+          <p className="contact-message">
+            I would love to hear from you regarding anything related to what's
+            posted on this website. if you have a request or a question, don't
+            hesitate to use the form.
+            <br />
+            or simply visit my fb page{" "}
+            <i className="fa-solid fa-hand-peace"></i>
+          </p>
+        </div>
         <p className="html-snippets"> &lt;form &gt;</p>
-        <form autoComplete="off" className="form" onSubmit={onSubmitHandler}>
-          <CustomInput
-            id="name"
-            placeholder="Name"
-            type="text"
-            errorText="anonymos guy huh!"
-            validators={[VALIDATOR_REQUIRE()]}
-            onInput={inputHandler}
-          />
+        <div className="form-div">
+          <form autoComplete="off" className="form" onSubmit={onSubmitHandler}>
+            <CustomInput
+              id="name"
+              placeholder="Name"
+              type="text"
+              errorText="anonymos guy huh!"
+              validators={[VALIDATOR_REQUIRE()]}
+              onInput={inputHandler}
+            />
 
-          <CustomInput
-            id="email"
-            placeholder="Email"
-            type="email"
-            errorText="enter a valid email !!"
-            validators={[VALIDATOR_EMAIL()]}
-            onInput={inputHandler}
-          />
+            <CustomInput
+              id="email"
+              placeholder="Email"
+              type="email"
+              errorText="enter a valid email !!"
+              validators={[VALIDATOR_EMAIL()]}
+              onInput={inputHandler}
+            />
 
-          <CustomInput
-            id="message"
-            placeholder="Message"
-            type="textarea"
-            errorText="message must be more than 5 letters !!"
-            validators={[VALIDATOR_MINLENGTH(5)]}
-            onInput={inputHandler}
-          />
+            <CustomInput
+              id="message"
+              placeholder="Message"
+              type="textarea"
+              errorText="message must be more than 5 letters !!"
+              validators={[VALIDATOR_MINLENGTH(5)]}
+              onInput={inputHandler}
+            />
 
-          {loading ? (
-            <div className="spinner-div">
-              <LoadingSpinner />
-            </div>
-          ) : (
-            <div className="form-button">
-              <Buton
-                disabled={!formState.isValid}
-                type="submit"
-                width={"30%"}
-                text={"Submit"}
-              />
-            </div>
-          )}
-        </form>
+            {loading ? (
+              <div className="spinner-div">
+                <LoadingSpinner />
+              </div>
+            ) : (
+              <div className="form-button">
+                <Buton
+                  disabled={!formState.isValid}
+                  type="submit"
+                  width={"30%"}
+                  text={"Submit"}
+                />
+              </div>
+            )}
+          </form>
+        </div>
         <p className="html-snippets"> &lt;/body &gt;</p>
       </section>
       <Modal
