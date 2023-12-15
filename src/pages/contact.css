@@ -6,7 +6,6 @@
   justify-content: center;
   text-align: start;
   color: white;
-  width: 100%;
   margin: auto 5vh;
 }
 input {
@@ -18,14 +17,6 @@ input {
   margin: 0;
   font-family: "Space Mono", monospace;
   font-family: "Whisper", cursive;
-}
-.form-div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.form {
-  max-width: 600px;
 }
 
 .form-button {
