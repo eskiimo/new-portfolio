@@ -21,16 +21,17 @@
   /* border: 1px solid #00e3b3; */
 }
 .name {
-  color: #00e3b3;
+  color: #888888;
   font-weight: 500;
 }
 .subtitle {
   margin-left: 2em;
   max-width: 700px;
+  color: #888888;
 }
 
 .info-with-color {
-  color: #00e3b3;
+  color: white;
 }
 .icons {
   display: flex;

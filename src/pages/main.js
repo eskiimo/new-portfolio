@@ -31,12 +31,24 @@ function Main() {
     }, 10);
     setActive(index);
   };
+
+  document.onmousemove = (e) => {
+    let light = document.getElementById("light");
+
+    let x = e.clientX;
+    let y = e.clientY;
+    light.style.top = `${y}px`;
+    light.style.left = `${x}px`;
+  };
+
   return (
     <div className="menu">
       <div id="menu-items">
         <Nav swipe={swipe} activeLink={activeIndex} />
       </div>
-      <div className="pattern"></div>
+      <div className="pattern">
+        <div id="light"></div>
+      </div>
 
       <div className="card-group">
         <div className="card" data-index={0} data-status="active">

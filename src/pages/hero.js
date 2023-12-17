@@ -108,7 +108,7 @@ export default function Home() {
       <article>
         <p className="subtitle">
           Full Stack Developer specialized in{" "}
-          <span className="info-with-color">MERN</span>stack . JavaScript
+          <span className="info-with-color">MERN</span> stack . JavaScript
           enthusiast creating friendly user interfaces, enhancing web
           performance and SEO, Exploring different frameworks like{" "}
           <span className="info-with-color">NEXT</span> and{" "}

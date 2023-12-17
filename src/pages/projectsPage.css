@@ -4,12 +4,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  & h1 {
+    margin-bottom: 0;
+  }
 }
 
 .cards-row {
-  margin-top: 2em;
+  margin-top: 1em;
   display: grid;
-  grid-gap: 2em;
+  grid-gap: 1em;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 30%));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 30%));
 }
