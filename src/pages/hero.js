@@ -81,29 +81,14 @@ export default function Home() {
           <i className="fa-brands fa-hackerrank"></i>
         </a>
 
-        <a href="//fb.com/kremkamall" target="_blank" rel="noopener noreferrer">
-          {" "}
-          <i className="fab fa-facebook"> </i>{" "}
-        </a>
-
         <a
-          href="https://www.instagram.com/__eskiimo"
+          href="https://codepen.io/13eskiimo/pens/public"
           target="_blank"
           rel="noopener noreferrer"
         >
           {" "}
-          <i className="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-codepen"></i>
         </a>
-
-        <a
-          href="https://www.x.com/__eskiimo"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {" "}
-          <i className="fa-brands fa-twitter"></i>
-        </a>
-        <i className="fa-brands fa-x-twitter"></i>
       </div>
       <article>
         <p className="subtitle">

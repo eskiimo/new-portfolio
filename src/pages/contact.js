@@ -78,9 +78,36 @@ const Contact = () => {
             posted on this website. if you have a request or a question, don't
             hesitate to use the form.
             <br />
-            or simply visit my fb page{" "}
+            or simply visit my Social Media{" "}
             <i className="fa-solid fa-hand-peace"></i>
           </p>
+          <div className="icons">
+            <a
+              href="//fb.com/kremkamall"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i className="fab fa-facebook"> </i>{" "}
+            </a>
+
+            <a
+              href="https://www.instagram.com/__eskiimo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.x.com/__eskiimo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <i class="fa-brands fa-x-twitter"></i>{" "}
+            </a>
+          </div>
         </div>
         <p className="html-snippets"> &lt;form &gt;</p>
         <div className="form-div">
