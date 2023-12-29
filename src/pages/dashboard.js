@@ -35,7 +35,7 @@ const DashBoard = () => {
     <section id="dashboard">
       {verified ? (
         <>
-          <h1 className="dang"> messages</h1>
+          <h1 className="header"> messages</h1>
           <ul>
             {isLoading ? (
               <LoadingSpinner />

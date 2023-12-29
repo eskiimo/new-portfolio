@@ -68,7 +68,7 @@ const ProjectsPage = () => {
   return (
     <>
       <section id="project-page">
-        <h1 className="dang">PROJECTS</h1>
+        <h1 className="header">PROJECTS</h1>
         <div className="cards-row">
           {PROJECT_LIST.map((project, idx) => (
             <ProjectCard key={idx} project={project} />

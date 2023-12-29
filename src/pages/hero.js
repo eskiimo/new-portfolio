@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <section id="hero">
-      <h1>
+      <h1 className="header">
         &gt; Software Developer<span className="cursor ">|</span>
       </h1>
 

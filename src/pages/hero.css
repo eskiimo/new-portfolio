@@ -21,17 +21,17 @@
   /* border: 1px solid #00e3b3; */
 }
 .name {
-  color: #888888;
+  color: white;
   font-weight: 500;
 }
 .subtitle {
   margin-left: 2em;
   max-width: 700px;
-  color: #888888;
+  color: white;
 }
 
 .info-with-color {
-  color: white;
+  color: #00e3b3;
 }
 .icons {
   display: flex;
@@ -45,14 +45,4 @@
     color: #00e3b3;
     cursor: pointer;
   }
-}
-
-@import url(https://fonts.googleapis.com/css?family=Righteous);
-
-.dang {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  font-size: 3rem;
-  /* text-shadow: 0.05em 0.05em 0 #00e3b3; */
 }

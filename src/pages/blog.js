@@ -24,7 +24,7 @@ const BlogPage = () => {
 
   return (
     <section id="blog">
-      <h1 className="dang"> Blogs</h1>
+      <h1 className="header"> Blogs</h1>
       <ul>
         {isLoading ? (
           <LoadingSpinner />

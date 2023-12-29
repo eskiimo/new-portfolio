@@ -70,7 +70,7 @@ const Contact = () => {
         <p className="html-snippets"> &lt;body &gt;</p>
         <p className="html-snippets">&lt;h1 &gt;</p>
 
-        <h1>CONTACT ME!</h1>
+        <h1 className="header">CONTACT ME!</h1>
         <p className="html-snippets"> &lt;p &gt;</p>
         <div className="form-div">
           <p className="contact-message">
